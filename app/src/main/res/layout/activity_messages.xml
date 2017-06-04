@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.psi.easymanager.widget.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_view"
+    style="@style/MatchWidthAndMatchHeight">
+
+  <LinearLayout
+      style="@style/MatchWidthAndMatchHeight"
+      android:background="@mipmap/bg_main"
+      android:orientation="horizontal">
+    <!--左边容器-->
+    <FrameLayout
+        android:id="@+id/fl_left_container_temp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_of_container"
+        android:layout_weight="3"
+        android:padding="@dimen/padding_big"
+        android:background="@color/white"></FrameLayout>
+
+    <ViewStub
+        android:id="@+id/vs_left_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:padding="@dimen/padding_big"
+        android:background="@color/white"
+        android:layout="@layout/layout_messages_left"></ViewStub>
+    <!--右边-->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:padding="@dimen/padding_big"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:text="消息列表"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_font_size_big" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_4_5"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_refresh_48px"
+            android:visibility="invisible" />
+      </RelativeLayout>
+
+      <View
+          style="@style/DividerLineBlack"
+          android:layout_marginBottom="@dimen/margin_1_5"
+          android:layout_marginTop="@dimen/margin_1_5" />
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rcv_messages"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="1" />
+
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_gravity="bottom|right">
+
+        <Button
+            android:id="@+id/btn_next_page"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_normal"
+            android:text="下一页" />
+
+        <Button
+            android:id="@+id/btn_last_page"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_1_5"
+            android:layout_toLeftOf="@id/btn_next_page"
+            android:padding="@dimen/padding_normal"
+            android:text="上一页" />
+      </RelativeLayout>
+    </LinearLayout>
+  </LinearLayout>
+</com.psi.easymanager.widget.SwipeBackLayout>

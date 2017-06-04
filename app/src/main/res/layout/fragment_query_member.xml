@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <TextView
+      android:id="@+id/tv_query_member_title"
+      style="@style/MemberCentreActivityTitle"
+      android:padding="@dimen/padding_big"
+      android:textColor="@color/black"
+      android:gravity="center"
+      android:text="刷实体卡搜索会员" />
+
+  <View
+      android:id="@+id/divider_1"
+      style="@style/DividerLineBlack"
+      android:layout_below="@id/tv_query_member_title" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+>
+  <RelativeLayout
+      android:id="@+id/rl_search_mobile"
+      android:layout_width="0dp"
+      android:layout_weight="1"
+      android:layout_height="50dp"
+      style="@style/MemberCentreActivityQuery"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="40dp">
+
+    <EditText
+        android:id="@+id/tv_fuzzy_query_number"
+        style="@style/MemberCentreActivityQueryEdit"
+        android:gravity="center"
+        android:hint="请刷实体卡" />
+
+    <ImageView
+        android:id="@+id/ic_member_search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/ic_cash_menu_fuzzy_query" />
+
+  </RelativeLayout>
+  <Button
+      android:id="@+id/btn_card_login"
+      android:layout_width="180dp"
+      android:layout_height="50dp"
+      android:background="@drawable/selector_btn_checkout_print_customer"
+      android:gravity="center"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="40dp"
+      android:text="手机号"
+      android:textColor="@color/white"
+      android:textSize="16sp" />
+</LinearLayout>
+
+  <!--<Button-->
+      <!--android:id="@+id/btn_card_login"-->
+      <!--android:layout_width="180dp"-->
+      <!--android:layout_height="50dp"-->
+      <!--android:background="@drawable/selector_btn_checkout_print_customer"-->
+      <!--android:gravity="center"-->
+      <!--android:layout_marginLeft="20dp"-->
+      <!--android:layout_marginRight="20dp"-->
+      <!--android:layout_marginTop="20dp"-->
+      <!--android:text="刷实体卡"-->
+      <!--android:textColor="@color/white"-->
+      <!--android:textSize="25sp" />-->
+  <EditText
+      android:id="@+id/et_vip_card_recharge"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_font_size_big"
+      android:textColor="@color/black"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="20dp"
+      android:gravity="center_vertical"
+      android:padding="10dp"
+      android:background="@drawable/bg_cash_menu_fuzzy_query"
+      android:hint="刷实体卡登录"
+      android:visibility="gone"/>
+  <LinearLayout
+      android:id="@+id/ll_keyboard_1"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_below="@id/rl_search_mobile"
+      android:layout_marginTop="70dp"
+      android:layout_weight="1"
+      android:padding="20dp">
+
+    <View style="@style/VipLoginDialogHalvingLineVertical" />
+<Button
+    android:layout_width="1dp"
+    android:layout_height="1dp"
+    android:background="@color/white"
+    android:id="@+id/btn_test"></Button>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_7"
+          style="@style/MemberQueryNumButton"
+          android:background="@drawable/bg_button_vip_query"
+          android:text="7" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_4"
+          style="@style/MemberQueryNumButton"
+          android:background="@drawable/bg_button_vip_query"
+          android:text="4" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_1"
+          style="@style/MemberQueryNumButton"
+
+          android:background="@drawable/bg_button_vip_query"
+          android:text="1" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_delete"
+          style="@style/MemberQueryNumButton"
+          android:background="@drawable/bg_button_vip_query"
+
+          android:text="清空" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+    </LinearLayout>
+
+    <View style="@style/VipLoginDialogHalvingLineVertical" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_8"
+          style="@style/MemberQueryNumButton"
+
+          android:background="@drawable/bg_button_vip_query"
+          android:text="8" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_5"
+          style="@style/MemberQueryNumButton"
+
+          android:background="@drawable/bg_button_vip_query"
+          android:text="5" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_2"
+          style="@style/MemberQueryNumButton"
+
+          android:background="@drawable/bg_button_vip_query"
+          android:text="2" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_0"
+          style="@style/MemberQueryNumButton"
+          android:background="@drawable/bg_button_vip_query"
+          android:text="0" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+    </LinearLayout>
+
+    <View style="@style/VipLoginDialogHalvingLineVertical" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_9"
+          style="@style/MemberQueryNumButton"
+
+          android:background="@drawable/bg_button_vip_query"
+          android:text="9" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_6"
+          style="@style/MemberQueryNumButton"
+
+          android:background="@drawable/bg_button_vip_query"
+          android:text="6" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_3"
+          style="@style/MemberQueryNumButton"
+
+          android:background="@drawable/bg_button_vip_query"
+          android:text="3" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+
+      <TextView
+          android:id="@+id/btn_back"
+          style="@style/MemberQueryNumButton"
+          android:background="@drawable/bg_button_vip_query"
+          android:text="删除" />
+
+      <View style="@style/VipLoginDialogHalvingLine" />
+    </LinearLayout>
+
+    <View style="@style/VipLoginDialogHalvingLineVertical" />
+
+  </LinearLayout>
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="@dimen/margin_4_5"
+      android:layout_marginLeft="@dimen/margin_4_5"
+      android:layout_marginRight="@dimen/margin_4_5"
+      android:layout_marginTop="@dimen/margin_4_5">
+
+    <Button
+        android:id="@+id/btn_img_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/selector_vip_add_member_btn"
+        android:text="   添加手机会员   "
+        android:textColor="@color/selector_color_vip_btn_text"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_vip_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_vip_add_member_btn"
+        android:text="     登         录      "
+        android:textColor="@color/selector_color_vip_btn_text"
+        android:textSize="20sp" />
+  </RelativeLayout>
+
+  <!--<ImageButton-->
+  <!--android:id="@+id/btn_img_new"-->
+  <!--style="@style/WrapWidthAndWrapHeight"-->
+  <!--android:layout_alignParentBottom="true"-->
+  <!--android:layout_centerHorizontal="true"-->
+  <!--android:layout_marginBottom="@dimen/margin_16_5"-->
+  <!--android:background="@drawable/selector_fab_vip_new"-->
+  <!--android:scaleType="centerCrop" />-->
+</LinearLayout>

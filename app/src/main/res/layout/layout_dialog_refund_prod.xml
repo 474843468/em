@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_small"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <EditText
+      android:id="@+id/et_num"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="数量"
+      android:inputType="number"
+      android:text="1" />
+
+  <TextView
+      android:id="@+id/tv_refund_reason_title"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/et_num"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:gravity="left"
+      android:text="退菜原因"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_size_normal" />
+
+  <ListView
+      android:id="@+id/lv_refund_reasons"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_refund_reason_title"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:choiceMode="singleChoice"
+      android:divider="@null" />
+
+</RelativeLayout>

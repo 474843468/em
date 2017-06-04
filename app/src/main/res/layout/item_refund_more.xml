@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <View style="@style/DividerLineBlackHalf" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="品名"
+        android:textColor="@color/primary_text" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center">
+
+      <LinearLayout
+          android:id="@+id/ll_number"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2_5"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:text="订货:"
+            android:textColor="#29b6f6" />
+
+        <ImageButton
+            android:id="@+id/ibtn_num_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_1_5"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_refund_reduce" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_1_5"
+            android:layout_marginRight="@dimen/margin_1_5"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <ImageButton
+            android:id="@+id/ibtn_num_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_1_5"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_refund_add" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/ll_two_unit"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/ll_number"
+          android:layout_marginRight="@dimen/margin_1_5">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_2_5"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:gravity="center"
+            android:text="结算:"
+            android:textColor="#29b6f6" />
+
+        <TextView
+            android:id="@+id/tv_mult_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_1_5"
+            android:layout_marginRight="@dimen/margin_1_5"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_normal"
+            android:gravity="center_horizontal"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_font_size_normal" />
+
+      </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+
+  </LinearLayout>
+
+  <View style="@style/DividerLineBlackHalf" />
+
+</LinearLayout>

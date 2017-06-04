@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndMatchHeight"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+  <RelativeLayout
+      android:id="@+id/rl_title"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/shift_bill_collect_fragment_rl_title_height"
+      >
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="所有账单信息"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_font_title"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:id="@+id/btn_next_page"
+        style="@style/WrapWidthAndWrapHeight"
+        android:text="下一页"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/padding_small"
+        android:layout_centerVertical="true"
+        />
+    <Button
+        android:id="@+id/btn_last_page"
+        style="@style/WrapWidthAndWrapHeight"
+        android:text="上一页"
+        android:layout_toLeftOf="@id/btn_next_page"
+        android:padding="@dimen/padding_small"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:layout_centerVertical="true"
+        />
+  </RelativeLayout>
+
+  <View
+      android:id="@+id/view_1"
+      style="@style/DividerLineBlack"
+      android:layout_below="@id/rl_title"
+      android:layout_marginTop="@dimen/margin_2_5"
+      />
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rcv"
+      style="@style/MatchWidthAndMatchHeight"
+      android:layout_below="@id/view_1"
+      android:layout_marginBottom="@dimen/margin_10_5"
+      android:layout_marginLeft="@dimen/margin_4_5"
+      android:layout_marginRight="@dimen/margin_4_5"
+      />
+</RelativeLayout>

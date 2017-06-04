@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndWrapHeight"
+    android:padding="@dimen/padding_normal"
+    android:orientation="horizontal">
+
+  <FrameLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="3"
+      android:background="@color/gray_light">
+
+    <TextView
+        android:id="@+id/tv_table_name"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_shift_bill_table"
+        android:text="1号包厢"
+        android:textColor="#dd191d"
+        android:textSize="@dimen/text_font_size_big" />
+
+  </FrameLayout>
+
+  <LinearLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_marginLeft="@dimen/margin_1_5"
+      android:layout_weight="7"
+      android:padding="@dimen/padding_small"
+      android:orientation="vertical">
+    <!--1-->
+    <TextView
+        android:id="@+id/tv_order_no"
+        style="@style/MatchWidthAndWrapHeight"
+        android:padding="@dimen/padding_small"
+        android:text="账单号:20000000000000"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <View style="@style/DividerLineGray" />
+    <!--2-->
+    <RelativeLayout
+        style="@style/MatchWidthAndWrapHeight"
+        android:padding="@dimen/padding_small">
+
+      <TextView
+          android:id="@+id/tv_receivable_money"
+          style="@style/WrapWidthAndWrapHeight"
+          android:text="应收金额:100.0"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_real_money"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_centerHorizontal="true"
+          android:text="实收金额:100.0"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_tail_money"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_alignParentRight="true"
+          android:text="抹  零:100.0"
+          android:textSize="@dimen/text_font_size_normal" />
+
+    </RelativeLayout>
+
+    <View style="@style/DividerLineGray" />
+
+    <TextView
+        android:id="@+id/tv_payment_received"
+        style="@style/MatchWidthAndWrapHeight"
+        android:padding="@dimen/padding_small"
+        android:textSize="@dimen/text_font_size_normal" />
+  </LinearLayout>
+</LinearLayout>

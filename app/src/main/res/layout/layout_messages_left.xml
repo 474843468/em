@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndMatchHeight"
+    android:padding="@dimen/padding_small"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/margin_3_5"
+      android:text="支付凭证"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_title" />
+
+  <View
+      android:id="@+id/view_temp_top"
+      style="@style/DividerLineBlack"
+      android:layout_marginTop="@dimen/margin_2_5" />
+  <!--支付人信息-->
+  <RelativeLayout
+      android:visibility="gone"
+      style="@style/MatchWidthAndWrapHeight"
+      android:padding="@dimen/padding_small">
+
+    <ImageView
+        android:id="@+id/iv_identity"
+        android:layout_width="@dimen/layout_message_left_iv_identity_width"
+        android:layout_height="@dimen/layout_message_left_iv_identity_height"
+        android:layout_margin="@dimen/margin_2_5"
+        android:padding="@dimen/padding_small"
+        android:src="@mipmap/ic_identity" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:layout_toRightOf="@id/iv_identity"
+        android:padding="@dimen/padding_small"
+        android:text="姓名:未知"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_phone"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:layout_toRightOf="@id/iv_identity"
+        android:padding="@dimen/padding_small"
+        android:text="电话:***********"
+        android:textColor="@color/black" />
+
+    <ImageView
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        android:layout_toRightOf="@id/tv_phone"
+        android:padding="@dimen/padding_small"
+        android:src="@android:drawable/stat_sys_vp_phone_call" />
+  </RelativeLayout>
+
+  <!--<View style="@style/DividerLineBlack" />-->
+  <!--支付详细信息-->
+  <LinearLayout
+      style="@style/MatchWidthAndWrapHeight"
+      android:padding="@dimen/padding_small"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_table"
+        style="@style/WrapWidthAndWrapHeight"
+        android:drawableLeft="@mipmap/ic_table"
+        android:drawablePadding="@dimen/padding_normal"
+        android:text="桌号:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_font_size_big" />
+
+    <TextView
+        android:id="@+id/tv_order"
+        style="@style/WrapWidthAndWrapHeight"
+        android:drawableLeft="@mipmap/ic_order"
+        android:drawablePadding="@dimen/padding_normal"
+        android:text="单号:"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_font_size_big" />
+
+    <TextView
+        android:id="@+id/tv_pay_money"
+        style="@style/WrapWidthAndWrapHeight"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_small"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_pay_trade_no"
+        style="@style/LayoutMessagesLeftEveryTvDetailStyle" />
+    <TextView
+        android:id="@+id/tv_pay_status"
+        style="@style/LayoutMessagesLeftEveryTvDetailStyle" />
+    <TextView
+        android:id="@+id/tv_pay_time"
+        style="@style/LayoutMessagesLeftEveryTvDetailStyle" />
+  </LinearLayout>
+
+  <View style="@style/DividerLineBlack" />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ibtn_refund"
+        android:layout_width="@dimen/layout_message_left_ibtn_refund_width_height"
+        android:layout_height="@dimen/layout_message_left_ibtn_refund_width_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_6_5"
+        android:background="@mipmap/ic_refund_pay"
+        android:scaleType="centerCrop" />
+  </RelativeLayout>
+
+
+</LinearLayout>

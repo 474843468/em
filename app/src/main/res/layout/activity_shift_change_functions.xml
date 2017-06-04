@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.psi.easymanager.widget.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_back"
+    style="@style/MatchWidthAndMatchHeight">
+
+  <LinearLayout
+      style="@style/MatchWidthAndMatchHeight"
+      android:background="@mipmap/bg_main">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:padding="@dimen/padding_big"
+        android:layout_marginRight="@dimen/margin_of_container"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_shift_change_functions_title"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_centerHorizontal="true"
+          android:text="查看信息"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_title" />
+
+      <View
+          android:id="@+id/divider_1"
+          style="@style/DividerLineBlack"
+          android:layout_below="@id/tv_shift_change_functions_title" />
+
+      <!--账单汇总信息-->
+      <RelativeLayout
+          android:id="@+id/rl_order_collect"
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_below="@+id/divider_1"
+          android:paddingBottom="@dimen/padding_big"
+          android:paddingLeft="@dimen/padding_normal"
+          android:paddingRight="@dimen/padding_normal"
+          android:paddingTop="@dimen/padding_big">
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:text="账单汇总信息"
+            android:textColor="@color/black" />
+      </RelativeLayout>
+
+      <View
+          android:id="@+id/divider_2"
+          style="@style/DividerLineBlack"
+          android:layout_below="@id/rl_order_collect" />
+
+      <!--分类汇总信息-->
+      <RelativeLayout
+          android:id="@+id/rl_cate_collect"
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_below="@id/rl_order_collect"
+          android:paddingBottom="@dimen/padding_big"
+          android:paddingLeft="@dimen/padding_normal"
+          android:paddingRight="@dimen/padding_normal"
+          android:paddingTop="@dimen/padding_big">
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:text="分类汇总信息"
+            android:textColor="@color/black" />
+
+      </RelativeLayout>
+
+      <View
+          android:id="@+id/divider_3"
+          style="@style/DividerLineBlack"
+          android:layout_below="@id/rl_cate_collect" />
+
+      <!--所有账单信息-->
+      <RelativeLayout
+          android:id="@+id/rl_all_order"
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_below="@id/rl_cate_collect"
+          android:paddingBottom="@dimen/padding_big"
+          android:paddingLeft="@dimen/padding_normal"
+          android:paddingRight="@dimen/padding_normal"
+          android:paddingTop="@dimen/padding_big">
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:text="所有账单信息"
+            android:textColor="@color/black" />
+      </RelativeLayout>
+
+      <View
+          android:id="@+id/divider_4"
+          style="@style/DividerLineBlack"
+          android:layout_below="@id/rl_all_order" />
+
+      <LinearLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_below="@id/divider_4"
+          android:layout_marginTop="@dimen/margin_6_5"
+          android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/MatchWidthAndWrapHeight"
+            android:padding="@dimen/padding_normal">
+
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_time_title"
+                style="@style/WrapWidthAndWrapHeight"
+                android:text="交接时间:" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/WrapWidthAndWrapHeight"
+                android:layout_below="@id/tv_time_title"
+                android:textColor="@color/colorAccent" />
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_area_title"
+                style="@style/WrapWidthAndWrapHeight"
+                android:text="区域" />
+
+            <TextView
+                android:id="@+id/tv_area"
+                style="@style/WrapWidthAndWrapHeight"
+                android:layout_below="@id/tv_area_title"
+                android:textColor="@color/colorAccent" />
+          </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MatchWidthAndWrapHeight"
+            android:padding="@dimen/padding_normal">
+
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_current_user_title"
+                style="@style/WrapWidthAndWrapHeight"
+                android:text="交班用户:" />
+
+            <TextView
+                android:id="@+id/tv_current_user"
+                style="@style/WrapWidthAndWrapHeight"
+                android:layout_below="@id/tv_current_user_title"
+                android:textColor="@color/colorAccent" />
+          </RelativeLayout>
+
+          <RelativeLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_cashier_title"
+                style="@style/WrapWidthAndWrapHeight"
+                android:text="收银员" />
+
+            <TextView
+                android:id="@+id/tv_cashier"
+                style="@style/WrapWidthAndWrapHeight"
+                android:layout_below="@id/tv_cashier_title"
+                android:textColor="@color/colorAccent" />
+          </RelativeLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <Button
+          android:id="@+id/btn_confirm_shift_change"
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:text="交接" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_shift_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:padding="@dimen/padding_big"
+        android:background="@color/white" />
+
+  </LinearLayout>
+
+
+</com.psi.easymanager.widget.SwipeBackLayout>

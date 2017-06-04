@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    style="@style/MatchWidthAndWrapHeight"
+    android:orientation="vertical">
+  <!--时间-->
+  <RelativeLayout style="@style/ItemReserveOrderEveryRlDetailStyle">
+
+    <TextView
+        style="@style/ItemReserveOrderEveryTvBeforeStyle"
+        android:text="时间" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        style="@style/ItemReserveOrderEveryTvDetailStyle" />
+  </RelativeLayout>
+
+  <RelativeLayout style="@style/ItemReserveOrderEveryRlDetailStyle">
+
+    <TextView
+        style="@style/ItemReserveOrderEveryTvBeforeStyle"
+        android:text="日期" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        style="@style/ItemReserveOrderEveryTvDetailStyle" />
+  </RelativeLayout>
+  <!--桌台-->
+  <RelativeLayout style="@style/ItemReserveOrderEveryRlDetailStyle">
+
+    <TextView
+        style="@style/ItemReserveOrderEveryTvBeforeStyle"
+        android:text="桌台" />
+
+    <TextView
+        android:id="@+id/tv_table"
+        style="@style/ItemReserveOrderEveryTvDetailStyle" />
+  </RelativeLayout>
+  <!--联系人-->
+  <RelativeLayout style="@style/ItemReserveOrderEveryRlDetailStyle">
+
+    <TextView
+        style="@style/ItemReserveOrderEveryTvBeforeStyle"
+        android:text="联系人" />
+
+    <TextView
+        android:id="@+id/tv_link_man"
+        style="@style/ItemReserveOrderEveryTvDetailStyle" />
+  </RelativeLayout>
+
+</LinearLayout>

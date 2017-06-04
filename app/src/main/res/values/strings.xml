@@ -1,0 +1,43 @@
+<resources>
+  <string name="app_name">逸掌柜</string>
+
+  <string name="main_tab_admin">ADMIN</string>
+  <string name="main_tab_bill">已结账单</string>
+  <string name="main_tab_shift_change">交接班</string>
+  <string name="main_tab_messages">消息列表</string>
+  <string name="main_tab_kitchen_print">打印管理</string>
+  <string name="main_tab_data_update">数据更新</string>
+  <string name="main_tab_member_centre">会员中心</string>
+  <string name="main_tab_reserve_manager">预定管理</string>
+  <string name="main_tab_more">设置</string>
+
+  <string name="kitchen_print_hint">提示：打印管理可查看打印机连接状态和补打单据。单据过多时，请及时清空!</string>
+
+  <string-array name="custom_product_weight_unit">
+    <item>斤</item>
+    <item>公斤</item>
+    <item>克</item>
+  </string-array>
+
+  <string-array name="shift_change_area_selections">
+    <item>全部</item>
+    <item>桌位单</item>
+    <item>零售单</item>
+  </string-array>
+
+  <string-array name="clear_disc_selections">
+    <item>清空商品折扣</item>
+    <item>清空会员价</item>
+  </string-array>
+
+  <string name="label_print_setting_introduce">
+    配置在客户点菜下单时，是否自动打印用于粘贴的标签纸，适用于奶茶店、零食等。注意：当开启标签打印机时，下单时，会自动打印标签内容，而不打印点菜单小票。
+  </string>
+  <string name="label_print_setting_paper_introduce">
+    宽高为标签纸张实际测量值(单位mm),间隔距离通常为2mm.
+  </string>
+
+  <string name="bt_print_test">
+    逸掌柜,蓝牙打印测试!
+  </string>
+</resources>

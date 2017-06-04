@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_margin="@dimen/layout_main_radio_group_margin"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+  <RadioButton
+      android:id="@+id/rb_tab_admin"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_admin"
+      android:text="@string/main_tab_admin" />
+
+  <RadioButton
+      android:id="@+id/rb_tab_over_bill"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_bill"
+      android:text="@string/main_tab_bill" />
+
+  <RadioButton
+      android:id="@+id/rb_tab_shift_change"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_shiftchange"
+      android:text="@string/main_tab_shift_change" />
+
+  <RadioButton
+      android:id="@+id/rb_tab_messages"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_messages"
+      android:text="@string/main_tab_messages" />
+
+  <RadioButton
+      android:id="@+id/rb_tab_kitchen_print"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_print_manager"
+      android:text="@string/main_tab_kitchen_print" />
+
+  <RadioButton
+      android:id="@+id/rb_tab_data_update"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_dataupdate"
+      android:text="@string/main_tab_data_update" />
+
+  <RadioButton
+      android:id="@+id/rb_tab_member_centre"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_member"
+      android:text="@string/main_tab_member_centre" />
+
+  <RadioButton
+      android:id="@+id/rb_tab_reserve_manager"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_reserve_manager"
+      android:text="@string/main_tab_reserve_manager" />
+
+  <RadioButton
+      android:id="@+id/rb_tab_more"
+      style="@style/MainTabs"
+      android:drawableTop="@drawable/selector_tab_more"
+      android:text="@string/main_tab_more" />
+</RadioGroup>

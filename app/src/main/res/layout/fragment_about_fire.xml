@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndMatchHeight"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:gravity="center"
+      android:text="关于逸掌柜"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_title" />
+
+  <View
+      style="@style/DividerLineBlack"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginTop="@dimen/margin_1_5" />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:text="餐厅远程管理与成本控制专家"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:text="倡导餐厅信息化与无纸化"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_normal" />
+
+  <LinearLayout
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:orientation="horizontal">
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:text="后台访问:"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <TextView
+        android:id="@+id/tv_bg_address"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:textColor="#0288d1"
+        android:textSize="@dimen/text_font_size_normal" />
+  </LinearLayout>
+
+  <Button
+      android:id="@+id/btn_check_update"
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:background="@drawable/selector_ordinary_print_btn"
+      android:text="检查新版本" />
+</LinearLayout>

@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWidthAndMatchHeight"
+    android:scrollbars="none"
+    >
+
+  <RelativeLayout
+      style="@style/MatchWidthAndMatchHeight"
+      android:paddingLeft="@dimen/padding_normal"
+      android:paddingRight="@dimen/padding_normal"
+      >
+
+    <TextView
+        android:id="@+id/tv_waiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2_5"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        android:gravity="center"
+        android:text="账单"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_big"
+        />
+
+    <TextView
+        android:id="@+id/tv_cashier"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/margin_2_5"
+        />
+
+    <TextView
+        android:id="@+id/tv_table_title"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_below="@id/tv_title"
+        android:text="桌号"
+        />
+
+    <TextView
+        android:id="@+id/tv_table"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_below="@id/tv_title"
+        android:layout_toRightOf="@id/tv_table_title"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tv_order_no"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_title"
+        android:text="No."
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tv_people_number_title"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_below="@id/tv_table"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:text="人数"
+        />
+
+    <TextView
+        android:id="@+id/tv_people_number"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_below="@id/tv_table"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:layout_toRightOf="@id/tv_people_number_title"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/tv_start_time"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_table_title"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_below="@id/tv_table_title"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:layout_toLeftOf="@id/tv_start_time"
+        android:text="开单时间"
+        />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/DividerLineGray"
+        android:layout_below="@id/tv_start_time"
+        android:layout_marginTop="@dimen/margin_1_5"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="@dimen/margin_1_5"
+        ></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/rcv"
+        android:orientation="vertical"
+        >
+
+      <View style="@style/OverBillDetailsContentFragmentDivider"/>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="合计"
+            />
+
+        <TextView
+            android:id="@+id/tv_total_num"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <View style="@style/OverBillDetailsContentFragmentDivider"/>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="应收"
+            />
+
+        <TextView
+            android:id="@+id/tv_receivable"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:visibility="gone"
+          >
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text=" 点单总额"
+            />
+
+        <TextView
+            android:id="@+id/tv_product_count"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            android:text="0.00"
+            />
+
+      </RelativeLayout>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="附加费"
+            />
+
+        <TextView
+            android:id="@+id/tv_extra"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="补足金额"
+            />
+
+        <TextView
+            android:id="@+id/tv_complement"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <View style="@style/OverBillDetailsContentFragmentDivider"/>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="实收"
+            />
+
+        <TextView
+            android:id="@+id/tv_received"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <View style="@style/OverBillDetailsContentFragmentDivider"/>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="支付类优惠"
+            />
+
+        <TextView
+            android:id="@+id/tv_pay_privilege"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <View style="@style/OverBillDetailsContentFragmentDivider"/>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="找零"
+            />
+
+        <TextView
+            android:id="@+id/tv_change"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="抹零"
+            />
+
+        <TextView
+            android:id="@+id/tv_tail"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <View style="@style/OverBillDetailsContentFragmentDivider"/>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          >
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="流水号"
+            />
+
+        <TextView
+            android:id="@+id/tv_order_req_num"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:text="结束时间"
+            />
+
+        <TextView
+            android:id="@+id/tv_end_time"
+            style="@style/OverBillDetailsContentFragmentTv"
+            android:layout_alignParentRight="true"
+            />
+      </RelativeLayout>
+
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_gravity="center_horizontal|bottom"
+          android:layout_marginBottom="@dimen/margin_1_5"
+          android:layout_marginTop="@dimen/margin_6_5"
+          >
+
+        <ImageButton
+            android:id="@+id/ibtn_detail_print"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_6_5"
+            android:background="@drawable/selector_btn_print_yellow"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageButton
+            android:id="@+id/ibtn_reverse"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_6_5"
+            android:background="@drawable/selector_btn_reverse_red"
+            android:scaleType="centerCrop"
+            />
+
+        <ImageButton
+            android:id="@+id/ibtn_detail_take_food"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_btn_take_food_blue"
+            />
+      </RelativeLayout>
+
+    </LinearLayout>
+  </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <com.psi.easymanager.widget.InterceptClickLayout
+      android:id="@+id/content_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@mipmap/bg_main"
+      android:fitsSystemWindows="true">
+    <!--用户登录-->
+    <FrameLayout
+        android:id="@+id/fl_login_by_user"
+        style="@style/LoginActivityLoginFramework"
+        android:layout_above="@+id/layout_kbd">
+
+      <include layout="@layout/layout_login_by_user" />
+    </FrameLayout>
+
+    <!--商家登录-->
+    <FrameLayout
+        android:id="@+id/fl_login_by_store"
+        style="@style/LoginActivityLoginFramework"
+        android:layout_above="@+id/layout_kbd"
+        android:visibility="gone">
+
+      <include layout="@layout/layout_login_by_store" />
+    </FrameLayout>
+
+    <!--键盘-->
+    <include
+        android:id="@+id/layout_kbd"
+        style="@style/LoginActivityKeyboard"
+        layout="@layout/layout_login_keyboard" />
+  </com.psi.easymanager.widget.InterceptClickLayout>
+
+</FrameLayout>

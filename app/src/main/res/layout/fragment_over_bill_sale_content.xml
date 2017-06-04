@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWidthAndMatchHeight"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:orientation="vertical">
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center"
+      android:layout_marginBottom="@dimen/margin_1_5"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:gravity="center"
+      android:text="销售统计"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      android:id="@+id/tv_title"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center"
+      android:text="分类名称"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_normal" />
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rcv_sale_content"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+
+  <ImageButton
+      android:id="@+id/ibtn_sale_print"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:background="@drawable/selector_btn_print_yellow"
+      android:scaleType="centerCrop" />
+</LinearLayout>

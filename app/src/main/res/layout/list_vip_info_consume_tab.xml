@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndWrapHeight"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <View
+      android:id="@+id/vip_info_divider_top"
+      style="@style/DividerLineBlackHalf" />
+
+  <LinearLayout
+      android:id="@+id/ll_vip_info_content"
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_below="@id/vip_info_divider_top">
+
+    <!--<View-->
+    <!--android:layout_width="0.5dip"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@color/black"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="0dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="2"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="10dip"-->
+    <!--android:paddingTop="10dip"-->
+    <!--android:text="序号"-->
+    <!--android:textColor="@color/black"/>-->
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="消费时间"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="@color/black" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="消费金额"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="fill_parent"
+        android:background="@color/black" />
+
+    <!--<TextView-->
+    <!--android:layout_width="0dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.5"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="10dip"-->
+    <!--android:paddingTop="10dip"-->
+    <!--android:text="赠送金额"-->
+    <!--android:textColor="@color/black"-->
+    <!--/>-->
+
+    <!--<View-->
+    <!--android:layout_width="0.5dip"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@color/black"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.5"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="10dip"-->
+    <!--android:paddingTop="10dip"-->
+    <!--android:text="状态"-->
+    <!--android:textColor="@color/black"-->
+    <!--/>-->
+
+    <!--<View-->
+    <!--android:layout_width="0.5dip"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@color/black"-->
+    <!--/>-->
+    <!--<TextView-->
+    <!--android:layout_width="0dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="2"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="10dip"-->
+    <!--android:paddingTop="10dip"-->
+    <!--android:text="操作"-->
+    <!--android:textColor="@color/black"-->
+    <!--/>-->
+    <!--<View-->
+    <!--android:layout_width="0.5dip"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@color/black"-->
+    <!--/>-->
+
+  </LinearLayout>
+
+</RelativeLayout>

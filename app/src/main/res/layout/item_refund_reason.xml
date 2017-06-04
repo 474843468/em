@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:background="#00ffffff"
+    android:gravity="left|center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeightSmall"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:textColor="@color/refund_reason_item_textcolor"
+    android:textSize="@dimen/text_font_size_normal">
+
+</TextView>

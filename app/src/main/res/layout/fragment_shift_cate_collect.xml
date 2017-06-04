@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndMatchHeight"
+    android:orientation="horizontal">
+
+  <TextView
+      android:id="@+id/tv_cate_collect_title"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_centerHorizontal="true"
+      android:layout_gravity="center_horizontal"
+      android:text="分类汇总信息"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_title" />
+
+  <View
+      android:id="@+id/view_1"
+      style="@style/DividerLineBlack"
+      android:layout_below="@id/tv_cate_collect_title"
+      android:layout_marginTop="@dimen/margin_2_5" />
+
+  <LinearLayout
+      android:id="@+id/ll_cate"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_below="@id/view_1"
+      android:layout_marginLeft="@dimen/margin_4_5"
+      android:layout_marginRight="@dimen/margin_1_5"
+      android:layout_marginTop="@dimen/margin_4_5"
+      android:padding="@dimen/padding_big"
+      android:background="@color/divider"
+      android:gravity="center"
+      android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_cate"
+        android:layout_width="@dimen/shift_cate_collect_fragment_iv_cate_width"
+        android:layout_height="@dimen/shift_cate_collect_fragment_iv_cate_width"
+        android:src="@mipmap/ic_shift_cate" />
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="分类统计"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_font_title" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/ll_cate_title"
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_below="@id/view_1"
+      android:layout_marginLeft="@dimen/margin_1_5"
+      android:layout_marginRight="@dimen/margin_1_5"
+      android:layout_toRightOf="@id/ll_cate"
+      android:padding="@dimen/padding_normal">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="项目"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="数量"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="原价"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="优惠后金额"
+        android:textSize="@dimen/text_font_size_normal" />
+  </LinearLayout>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/rcv"
+      style="@style/MatchWidthAndMatchHeight"
+      android:layout_below="@id/ll_cate_title"
+      android:layout_marginBottom="@dimen/margin_10_5"
+      android:layout_marginLeft="@dimen/margin_4_5"
+      android:layout_marginRight="@dimen/margin_4_5"
+      android:layout_toRightOf="@id/ll_cate" />
+
+  <RelativeLayout
+      android:id="@+id/rl_btn_shift"
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginLeft="@dimen/margin_6_5"
+      android:layout_marginRight="@dimen/margin_6_5">
+
+    <ImageButton
+        android:id="@+id/ibtn_shift_print"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_10_5"
+        android:background="@drawable/selector_btn_shift_print"
+        android:scaleType="centerCrop" />
+
+  </RelativeLayout>
+
+</RelativeLayout>

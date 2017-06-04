@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWidthAndMatchHeight"
+    >
+
+  <LinearLayout
+      style="@style/MatchWidthAndWrapHeight"
+      android:orientation="vertical"
+      android:paddingLeft="@dimen/padding_normal"
+      android:paddingRight="@dimen/padding_normal"
+      >
+
+    <TextView
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        android:gravity="center"
+        android:text="账单汇总"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_big"
+        />
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_gravity="center"
+        android:text="收银员"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_normal"
+        />
+
+    <View
+        style="@style/DividerLineGray"
+        android:layout_marginBottom="@dimen/margin_2_5"
+        android:layout_marginTop="@dimen/margin_2_5"
+        />
+
+    <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+      <TextView
+          style="@style/OverBillCollectionContentFragmentTvLeft"
+          android:text="应收"
+          />
+
+      <TextView
+          android:id="@+id/tv_receivable"
+          style="@style/OverBillCollectionContentFragmentTvRight"
+          />
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerLineGray"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        />
+
+    <RelativeLayout
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_marginTop="@dimen/margin_2_5"
+        >
+
+      <TextView
+          style="@style/OverBillCollectionContentFragmentTvLeft"
+          android:text="实收"
+          />
+
+      <TextView
+          android:id="@+id/tv_received"
+          style="@style/OverBillCollectionContentFragmentTvRight"
+          />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerLineGray"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        />
+
+    <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+      <TextView
+          style="@style/OverBillCollectionContentFragmentTvLeft"
+          android:text="找零"
+          />
+
+      <TextView
+          android:id="@+id/tv_change"
+          style="@style/OverBillCollectionContentFragmentTvRight"
+          />
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerLineGray"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        />
+
+    <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+      <TextView
+          style="@style/OverBillCollectionContentFragmentTvLeft"
+          android:text="抹零"
+          />
+
+      <TextView
+          android:id="@+id/tv_tail"
+          style="@style/OverBillCollectionContentFragmentTvRight"
+          />
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerLineGray"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        />
+
+
+
+    <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+      <TextView
+          style="@style/OverBillCollectionContentFragmentTvLeft"
+          android:text="支付类优惠"
+          />
+
+      <TextView
+          android:id="@+id/tv_pay_privilege"
+          style="@style/OverBillCollectionContentFragmentTvRight"
+          />
+    </RelativeLayout>
+
+    <View
+        style="@style/DividerLineGray"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        />
+  </LinearLayout>
+
+  <ImageButton
+      android:id="@+id/ibtn_account_print"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:background="@drawable/selector_btn_print_yellow"
+      android:scaleType="centerCrop"
+      />
+</RelativeLayout>

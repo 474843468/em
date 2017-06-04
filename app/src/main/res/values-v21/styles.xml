@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="AppTheme"
+      parent="Theme.AppCompat.Light.NoActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">#4CAF50</item>
+    <item name="colorPrimaryDark">#388E3C</item>
+    <item name="colorAccent">#FF5722</item>
+    <item name="android:windowEnableSplitTouch">false</item>
+    <item name="android:splitMotionEvents">false</item>
+    <item name="android:windowFullscreen">true</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="ImageTranslucentTheme"
+      parent="Theme.AppCompat.Light.DarkActionBar">
+    <item name="android:windowTranslucentStatus">false</item>
+    <item name="android:windowTranslucentNavigation">true</item>
+    <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
+
+  <!--透明Activity-->
+  <style name="AppTheme.TransparentActivity" parent="AppTheme">
+    <item name="android:windowBackground">@android:color/transparent</item>
+    <item name="android:windowIsTranslucent">true</item>
+  </style>
+</resources>

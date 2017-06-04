@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.psi.easymanager.widget.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_view"
+    style="@style/MatchWidthAndMatchHeight">
+
+  <LinearLayout
+      style="@style/MatchWidthAndMatchHeight"
+      android:background="@mipmap/bg_main">
+    <!--left container-->
+    <FrameLayout
+        android:id="@+id/fl_left"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_of_container"
+        android:layout_weight="3"
+        android:padding="@dimen/margin_3_5"
+        android:background="@color/white">
+
+      <include
+          android:id="@+id/rl_add_reserve"
+          style="@style/MatchWidthAndMatchHeight"
+          layout="@layout/layout_reserve_no_order" />
+
+    </FrameLayout>
+
+    <!--right container-->
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:background="@color/white"
+        android:orientation="vertical">
+      <!--导航栏-->
+      <RelativeLayout
+          android:id="@+id/rl_navigation"
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_marginTop="@dimen/margin_1_5"
+          android:padding="@dimen/padding_normal">
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:text="预订单"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_font_size_big" />
+
+        <!--已到达-->
+        <TextView
+            android:id="@+id/tv_ont_reach"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_2_5"
+            android:text="已到达"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <!--已预定-->
+        <TextView
+            android:id="@+id/tv_reserve"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_3_5"
+            android:layout_toLeftOf="@id/tv_ont_reach"
+            android:text="已预订"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_font_size_normal" />
+      </RelativeLayout>
+
+      <View
+          android:id="@+id/view"
+          style="@style/DividerLineBlack"
+          android:layout_marginTop="@dimen/margin_1_5" />
+      <!--日期-->
+      <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+        <TextView
+            android:id="@+id/tv_date_title"
+            android:layout_width="@dimen/reserve_activity_tv_date_title_width"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_1_5"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:text="预定日期"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_date_title"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="@dimen/padding_small"
+            android:paddingLeft="@dimen/padding_normal"
+            android:paddingRight="@dimen/padding_normal"
+            android:paddingTop="@dimen/padding_small"
+            android:background="@drawable/selector_reserve_order_date"
+            android:drawablePadding="@dimen/padding_small"
+            android:drawableRight="@mipmap/ic_arrow_down"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="今日"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <com.psi.easymanager.widget.DeleteEditText
+            android:id="@+id/et_search"
+            android:layout_width="@dimen/reserve_activity_et_search_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_4_5"
+            android:layout_marginTop="@dimen/margin_4_5"
+            android:padding="@dimen/reserve_activity_et_search_padding"
+            android:background="@drawable/shape_search_edit_text"
+            android:drawablePadding="@dimen/reserve_activity_et_search_drawable_padding"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="联系电话"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_font_size_normal" />
+
+      </RelativeLayout>
+      <!--内容栏-->
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rcv_reserve_orders"
+          style="@style/MatchWidthAndMatchHeight"
+          android:layout_marginBottom="@dimen/margin_2_5"
+          android:layout_marginTop="@dimen/margin_2_5" />
+    </LinearLayout>
+
+
+  </LinearLayout>
+</com.psi.easymanager.widget.SwipeBackLayout>

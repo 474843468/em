@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/login_activity_kbd_padding"
+    android:background="@drawable/bg_login_keyboard"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@color/login_kbd_bg">
+
+    <Button
+        android:id="@+id/btn_q"
+        style="@style/LoginActivityKbdBtn"
+        android:text="q" />
+
+    <Button
+        android:id="@+id/btn_w"
+        style="@style/LoginActivityKbdBtn"
+        android:text="w" />
+
+    <Button
+        android:id="@+id/btn_e"
+        style="@style/LoginActivityKbdBtn"
+        android:text="e" />
+
+    <Button
+        android:id="@+id/btn_r"
+        style="@style/LoginActivityKbdBtn"
+        android:text="r" />
+
+    <Button
+        android:id="@+id/btn_t"
+        style="@style/LoginActivityKbdBtn"
+        android:text="t" />
+
+    <Button
+        android:id="@+id/btn_y"
+        style="@style/LoginActivityKbdBtn"
+        android:text="y" />
+
+    <Button
+        android:id="@+id/btn_u"
+        style="@style/LoginActivityKbdBtn"
+        android:text="u" />
+
+    <Button
+        android:id="@+id/btn_i"
+        style="@style/LoginActivityKbdBtn"
+        android:text="i" />
+
+    <Button
+        android:id="@+id/btn_o"
+        style="@style/LoginActivityKbdBtn"
+        android:text="o" />
+
+    <Button
+        android:id="@+id/btn_p"
+        style="@style/LoginActivityKbdBtn"
+        android:text="p" />
+
+    <Button
+        android:id="@+id/btn_1"
+        style="@style/LoginActivityKbdBtn"
+        android:layout_marginLeft="@dimen/margin_3_5"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btn_2"
+        style="@style/LoginActivityKbdBtn"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/btn_3"
+        style="@style/LoginActivityKbdBtn"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/btn_4"
+        style="@style/LoginActivityKbdBtn"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/btn_del"
+        style="@style/LoginActivityKbdBtn"
+        android:text="删除" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:layout_weight="1"
+      android:background="@color/login_kbd_bg">
+
+    <Button
+        android:id="@+id/btn_a"
+        style="@style/LoginActivityKbdBtn"
+        android:text="a" />
+
+    <Button
+        android:id="@+id/btn_s"
+        style="@style/LoginActivityKbdBtn"
+        android:text="s" />
+
+    <Button
+        android:id="@+id/btn_d"
+        style="@style/LoginActivityKbdBtn"
+        android:text="d" />
+
+    <Button
+        android:id="@+id/btn_f"
+        style="@style/LoginActivityKbdBtn"
+        android:text="f" />
+
+    <Button
+        android:id="@+id/btn_g"
+        style="@style/LoginActivityKbdBtn"
+        android:text="g" />
+
+    <Button
+        android:id="@+id/btn_h"
+        style="@style/LoginActivityKbdBtn"
+        android:text="h" />
+
+    <Button
+        android:id="@+id/btn_j"
+        style="@style/LoginActivityKbdBtn"
+        android:text="j" />
+
+    <Button
+        android:id="@+id/btn_k"
+        style="@style/LoginActivityKbdBtn"
+        android:text="k" />
+
+    <Button
+        android:id="@+id/btn_l"
+        style="@style/LoginActivityKbdBtn"
+        android:text="l" />
+
+    <Button
+        android:id="@+id/btn_slash"
+        style="@style/LoginActivityKbdBtn"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/btn_5"
+        style="@style/LoginActivityKbdBtn"
+        android:layout_marginLeft="@dimen/margin_3_5"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/btn_6"
+        style="@style/LoginActivityKbdBtn"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/btn_7"
+        style="@style/LoginActivityKbdBtn"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/btn_8"
+        style="@style/LoginActivityKbdBtn"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/btn_clear"
+        style="@style/LoginActivityKbdBtn"
+        android:text="清空" />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:background="@color/login_kbd_bg">
+
+    <Button
+        android:id="@+id/btn_z"
+        style="@style/LoginActivityKbdBtn"
+        android:text="z" />
+
+    <Button
+        android:id="@+id/btn_x"
+        style="@style/LoginActivityKbdBtn"
+        android:text="x" />
+
+    <Button
+        android:id="@+id/btn_c"
+        style="@style/LoginActivityKbdBtn"
+        android:text="c" />
+
+    <Button
+        android:id="@+id/btn_v"
+        style="@style/LoginActivityKbdBtn"
+        android:text="v" />
+
+    <Button
+        android:id="@+id/btn_b"
+        style="@style/LoginActivityKbdBtn"
+        android:text="b" />
+
+    <Button
+        android:id="@+id/btn_n"
+        style="@style/LoginActivityKbdBtn"
+        android:text="n" />
+
+    <Button
+        android:id="@+id/btn_m"
+        style="@style/LoginActivityKbdBtn"
+        android:text="m" />
+
+    <Button
+        android:id="@+id/btn_special"
+        style="@style/LoginActivityKbdBtn" />
+
+    <Button
+        android:id="@+id/btn_capslock"
+        style="@style/LoginActivityKbdBtnSpecial"
+        android:text="CapsLock" />
+
+
+    <Button
+        android:id="@+id/btn_9"
+        style="@style/LoginActivityKbdBtn"
+        android:layout_marginLeft="@dimen/margin_3_5"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/btn_0"
+        style="@style/LoginActivityKbdBtn"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btn_point"
+        style="@style/LoginActivityKbdBtn"
+        android:text="." />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/LoginActivityKbdBtnSpecial"
+        android:text="确认" />
+
+  </LinearLayout>
+
+
+</LinearLayout>

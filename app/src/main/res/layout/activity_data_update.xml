@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.psi.easymanager.widget.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_back"
+    style="@style/MatchWidthAndMatchHeight">
+
+  <FrameLayout style="@style/MatchWidthAndMatchHeight">
+
+    <com.psi.easymanager.widget.InterceptClickLayout
+        android:id="@+id/content_view"
+        style="@style/MatchWidthAndMatchHeight"
+        android:background="@mipmap/bg_main">
+
+      <RelativeLayout
+          android:layout_width="@dimen/data_update_activity_content_view_rel_width"
+          android:layout_height="match_parent"
+          android:layout_marginRight="@dimen/margin_of_container"
+          android:padding="@dimen/data_update_activity_content_view_rel_padding"
+          android:background="@color/white"
+          android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_update_title"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerHorizontal="true"
+            android:text="数据更新"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_font_title" />
+
+        <View
+            android:id="@+id/divider_1"
+            style="@style/DividerLineBlack"
+            android:layout_below="@id/tv_update_title"
+            android:layout_marginTop="@dimen/margin_2_5" />
+
+        <ImageView
+            android:id="@+id/iv_data_update"
+            android:layout_width="@dimen/data_update_activity_content_view_iv_width"
+            android:layout_height="@dimen/data_update_activity_content_view_iv_height"
+            android:layout_below="@id/divider_1"
+            android:layout_marginLeft="@dimen/data_update_activity_content_view_iv_margin_left"
+            android:layout_marginTop="@dimen/data_update_activity_content_view_iv_margin_top"
+            android:src="@mipmap/ic_data_update" />
+
+        <Button
+            android:id="@+id/btn_data_update"
+            android:layout_width="@dimen/data_update_activity_content_view_btn_width"
+            android:layout_height="@dimen/data_update_activity_content_view_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/divider_1"
+            android:layout_marginRight="@dimen/data_update_activity_content_view_btn_margin_right"
+            android:layout_marginTop="@dimen/data_update_activity_content_view_btn_margin_top"
+            android:background="@drawable/selector_btn_data_update"
+            android:text="同步数据"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_last_update_time"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_data_update"
+            android:layout_marginRight="@dimen/margin_2_5"
+            android:layout_marginTop="@dimen/margin_2_5"
+            android:text="上次更新于:"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <TextView
+            android:id="@+id/tv_update_des"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_below="@id/iv_data_update"
+            android:layout_marginTop="@dimen/margin_2_5"
+            android:text="将您在后台修改过的最新设置信息(如:商品,员工,桌位等)更新到这台设备.每次系统启动时会自动更新一次设置数据。" />
+
+        <View
+            android:id="@+id/divider_2"
+            style="@style/DividerLineBlack"
+            android:layout_below="@id/tv_update_des"
+            android:layout_marginTop="@dimen/margin_2_5" />
+
+
+        <ImageView
+            android:id="@+id/iv_data_upload"
+            android:layout_width="@dimen/data_update_activity_content_view_iv_width"
+            android:layout_height="@dimen/data_update_activity_content_view_iv_height"
+            android:layout_below="@id/divider_2"
+            android:layout_marginLeft="@dimen/data_update_activity_content_view_iv_margin_left"
+            android:layout_marginTop="@dimen/data_update_activity_content_view_iv_margin_top"
+            android:src="@mipmap/ic_data_upload" />
+
+        <Button
+            android:id="@+id/btn_data_upload"
+            android:layout_width="@dimen/data_update_activity_content_view_btn_width"
+            android:layout_height="@dimen/data_update_activity_content_view_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/divider_2"
+            android:layout_marginRight="@dimen/data_update_activity_content_view_btn_margin_right"
+            android:layout_marginTop="@dimen/data_update_activity_content_view_btn_margin_top"
+            android:background="@drawable/selector_btn_data_update"
+            android:text="上传数据"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_last_upload_time"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/btn_data_upload"
+            android:layout_marginRight="@dimen/margin_2_5"
+            android:layout_marginTop="@dimen/margin_2_5"
+            android:text="上次上传于:"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <TextView
+            android:id="@+id/tv_upload_count"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_last_upload_time"
+            android:layout_marginRight="@dimen/margin_2_5"
+            android:layout_marginTop="@dimen/margin_2_5"
+            android:text="0个未上传订单"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/tv_upload_des"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_below="@id/tv_upload_count"
+            android:layout_marginTop="@dimen/margin_2_5"
+            android:text="上传营业数据至后台并生成报表,订单结账完毕自动上传,设备联网时,系统每半个小时自动上传一次。" />
+
+        <View
+            style="@style/DividerLineBlack"
+            android:layout_below="@id/tv_upload_des"
+            android:layout_marginTop="@dimen/margin_2_5" />
+
+      </RelativeLayout>
+    </com.psi.easymanager.widget.InterceptClickLayout>
+    <!--蒙层-->
+    <include layout="@layout/layout_progress_view"></include>
+  </FrameLayout>
+
+
+</com.psi.easymanager.widget.SwipeBackLayout>

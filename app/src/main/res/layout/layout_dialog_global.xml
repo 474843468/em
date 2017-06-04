@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    />
+  <android.support.design.widget.TextInputLayout
+      android:id="@+id/text_input_layout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:hintEnabled="true"
+      app:hintAnimationEnabled="true"
+      app:counterEnabled="true"
+      app:hintTextAppearance="@style/MyStyle"
+    >
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+       />
+
+  </android.support.design.widget.TextInputLayout>
+
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+     >
+
+    <TextView
+        android:id="@+id/tv_ok"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_button_vip_query"
+        android:text="确定"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/tv_ok"
+        android:background="@drawable/bg_button_vip_query"
+        android:text="取消"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+  </RelativeLayout>
+</LinearLayout>

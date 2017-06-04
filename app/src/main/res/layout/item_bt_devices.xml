@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_small"
+    android:background="@drawable/selector_bt_device_item"
+    android:orientation="vertical">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/padding_normal"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_bt_device_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_bt_phone" />
+
+    <TextView
+        android:id="@+id/tv_name_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="right|center_vertical"
+      android:padding="@dimen/padding_small"
+      android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_add_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="已添加"
+        android:textColor="@color/material_blue"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@mipmap/ic_bill_right_arrows" />
+  </LinearLayout>
+
+  <View
+      style="@style/DividerLineGray"
+      android:layout_gravity="bottom" />
+
+</FrameLayout>

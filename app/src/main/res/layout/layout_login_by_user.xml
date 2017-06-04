@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_login_user_store"
+    >
+
+  <TextView
+      android:id="@+id/tv_app_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/app_name"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/login_activity_title_text_size"
+      android:layout_centerHorizontal="true"
+      />
+
+  <TextView
+      android:id="@+id/tv_app_version"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/tv_app_name"
+      android:layout_alignBottom="@id/tv_app_name"
+      android:layout_marginLeft="@dimen/margin_1_5"
+      android:text="v1.0"
+      android:textSize="@dimen/text_font_size_normal"
+      android:textColor="@color/gray_dark"
+      />
+
+  <TextView
+      android:id="@+id/tv_ip_address"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_app_name"
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="@dimen/login_activity_ip_margin_top"
+      android:text="本机ip地址"
+      android:textSize="@dimen/login_ip_address_text"
+      android:textColor="@color/gray_dark"
+      />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_ip_address"
+      android:layout_marginLeft="@dimen/login_activity_user_store_login_framework_margin_left_right"
+      android:layout_marginRight="@dimen/login_activity_user_store_login_framework_margin_left_right"
+      android:layout_marginTop="@dimen/login_activity_user_store_login_framework_margin_top"
+      android:orientation="vertical"
+      >
+    <!--商家入口-->
+    <RelativeLayout
+        android:id="@+id/rl_store_login_entrance"
+        style="@style/LoginActivityInputFramework"
+        android:background="@drawable/bg_login_fl_unsel"
+        >
+
+      <TextView
+          android:id="@+id/tv_store_login_entrance"
+          style="@style/LoginActivityInputFrameworkTv"
+          android:text="初始化数据"
+          android:textColor="#FF5722"
+          />
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:src="@mipmap/ic_user_login_arrows"
+          />
+    </RelativeLayout>
+
+    <!--用户名-->
+    <FrameLayout
+        android:id="@+id/fl_user_login_name"
+        style="@style/LoginActivityInputFramework"
+        android:layout_marginTop="@dimen/login_activity_input_framework_margin_top"
+        android:background="@drawable/bg_login_fl_unsel"
+        >
+
+      <TextView
+          android:id="@+id/tv_user_login_name"
+          style="@style/LoginActivityInputFrameworkTv"
+          android:hint="用户名"
+          android:textColor="#FF5722"
+          android:textColorHint="@color/secondary_text"
+          />
+    </FrameLayout>
+
+    <!--密码-->
+    <FrameLayout
+        android:id="@+id/fl_user_login_pwd"
+        style="@style/LoginActivityInputFramework"
+        android:layout_marginTop="@dimen/login_activity_input_framework_margin_top"
+        android:background="@drawable/bg_login_fl_unsel"
+        >
+
+      <TextView
+          android:id="@+id/tv_user_login_pwd"
+          style="@style/LoginActivityInputFrameworkTv"
+          android:hint="密码"
+          android:inputType="textPassword"
+          android:textColor="#FF5722"
+          android:textColorHint="@color/secondary_text"
+          />
+    </FrameLayout>
+
+    <CheckBox
+        android:id="@+id/cb_save_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:checked="true"
+        android:text="记住密码"
+        android:textColor="@color/primary_text"
+        />
+
+    <Button
+        android:id="@+id/btn_user_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:background="@drawable/selector_login_button"
+        android:gravity="center"
+        android:text="登\t录"
+        android:textColor="@color/white"
+        android:textSize="@dimen/user_login_text"
+        />
+  </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:orientation="vertical">
+
+
+
+    <Button
+        android:id="@+id/btn_start_scan_bt_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:background="@drawable/selector_ordinary_print_btn"
+        android:text="开始搜索" />
+
+  <LinearLayout
+      android:id="@+id/ll_pair_devices"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:orientation="vertical">
+
+    <View style="@style/DividerLineGray" />
+
+    <TextView
+        style="@style/MatchWidthAndWrapHeight"
+        android:padding="@dimen/padding_big"
+        android:background="#78b0bec5"
+        android:text="已配对的设备:(点击配置收银打印机,长按删除配对)" />
+
+    <View style="@style/DividerLineGray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_pair_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+
+  <LinearLayout
+      android:id="@+id/ll_new_devices"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+    <View style="@style/DividerLineGray" />
+
+    <TextView
+        style="@style/MatchWidthAndWrapHeight"
+        android:padding="@dimen/padding_big"
+        android:background="#78b0bec5"
+        android:text="其它可用设备:" />
+
+    <View style="@style/DividerLineGray" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_new_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+  </LinearLayout>
+</LinearLayout>

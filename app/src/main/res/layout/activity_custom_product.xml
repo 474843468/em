@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.psi.easymanager.widget.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_view_custom"
+    style="@style/MatchWidthAndMatchHeight">
+
+  <RelativeLayout
+      style="@style/MatchWidthAndMatchHeight"
+      android:padding="@dimen/padding_big"
+      android:background="@color/white"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_custom_name"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/padding_small"
+        android:text="自定义商品添加"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_font_size_big" />
+
+    <View
+        android:id="@+id/divide_1"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/tv_custom_name"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5"
+        android:layout_marginTop="@dimen/margin_3_5"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_custom_product_name"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divide_1"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_custom_product_item">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="品名"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_custom_product_name"
+          style="@style/WrapWidthAndWrapHeight"
+          android:gravity="end"
+          android:hint="请输入名称"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_2"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/ll_custom_product_name"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_custom_product_category"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divide_2"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_custom_product_item">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="所属分类"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_custom_product_category"
+          style="@style/WrapWidthAndWrapHeight"
+          android:gravity="end"
+          android:hint="当前分类"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_normal" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/divide_4"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/ll_custom_product_category"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5" />
+
+    <LinearLayout
+        android:id="@+id/ll_custom_product_unit"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divide_4"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_custom_product_item">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="数量单位"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_custom_product_unit"
+          style="@style/WrapWidthAndWrapHeight"
+          android:gravity="end"
+          android:text="份"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_5"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/ll_custom_product_unit"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5" />
+
+    <LinearLayout
+        android:id="@+id/ll_custom_product_buy_weight_switch"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divide_5"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_custom_product_item">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="按重量结账"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <com.kyleduo.switchbutton.SwitchButton
+          android:id="@+id/sb_custom_product_pay_by_weight"
+          style="@style/WrapWidthAndWrapHeight"
+          app:kswTintColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_6"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/ll_custom_product_buy_weight_switch"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_custom_product_weight_unit"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divide_6"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_custom_product_item"
+        android:visibility="gone">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="重量单位"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_custom_product_weight_unit"
+          style="@style/WrapWidthAndWrapHeight"
+          android:gravity="end"
+          android:hint="请输入重量单位"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_normal" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_8"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/ll_custom_product_weight_unit"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5"
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_custom_product_unique_price"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divide_8"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_custom_product_item"
+        android:gravity="center_vertical">
+
+      <TextView
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_weight="1"
+          android:text="单价"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_temp"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_alignParentRight="true"
+          android:gravity="end"
+          android:text="元"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_custom_product_unique_price"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_toLeftOf="@id/tv_temp"
+          android:gravity="end"
+          android:text="10"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_normal" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divide_9"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/rl_custom_product_unique_price"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_custom_product_is_discount"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divide_9"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_custom_product_item">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="允许打折"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <com.kyleduo.switchbutton.SwitchButton
+          android:id="@+id/sb_custom_product_allow_discount"
+          style="@style/WrapWidthAndWrapHeight"
+          app:kswTintColor="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_12"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/ll_custom_product_is_discount"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5" />
+
+    <RelativeLayout
+        android:id="@+id/rl_custom_product_config_plan"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/divide_12"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_custom_product_item"
+        android:gravity="center_vertical">
+
+      <TextView
+          style="@style/WrapWidthAndWrapHeight"
+          android:text="配菜方案"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_normal" />
+
+      <TextView
+          android:id="@+id/tv_custom_product_config_paln"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_alignParentRight="true"
+          android:gravity="end"
+          android:hint="请选择配菜方案"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_normal" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/divide_11"
+        style="@style/DividerLineBlack"
+        android:layout_below="@id/rl_custom_product_config_plan"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_marginRight="@dimen/margin_2_5" />
+
+    <RelativeLayout
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+      <Button
+          android:id="@+id/fab_custom_product_sure"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_alignParentRight="true"
+          android:layout_marginRight="@dimen/margin_6_5"
+          android:paddingBottom="@dimen/padding_more"
+          android:paddingLeft="@dimen/custom_activity_fab_custom_product_sure_padding_left_right"
+          android:paddingRight="@dimen/custom_activity_fab_custom_product_sure_padding_left_right"
+          android:paddingTop="@dimen/padding_more"
+          android:background="@drawable/selector_confirm_btn"
+          android:text="确定"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/fab_custom_product_cancel"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_marginRight="@dimen/margin_2_5"
+          android:layout_toLeftOf="@id/fab_custom_product_sure"
+          android:paddingBottom="@dimen/padding_more"
+          android:paddingLeft="@dimen/custom_activity_fab_custom_product_sure_padding_left_right"
+          android:paddingRight="@dimen/custom_activity_fab_custom_product_sure_padding_left_right"
+          android:paddingTop="@dimen/padding_more"
+          android:background="@drawable/selector_delete_btn"
+          android:text="取消"
+          android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+
+</com.psi.easymanager.widget.SwipeBackLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    style="@style/MatchWidthAndMatchHeight"
+    android:padding="@dimen/add_reserve_fragment_ll_container_padding"
+    android:orientation="vertical">
+  <!--title-->
+  <TextView
+      android:id="@+id/tv_title"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_horizontal"
+      android:text="新增预定"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_title" />
+
+  <View
+      android:id="@+id/view"
+      style="@style/DividerLineBlack"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:paddingLeft="@dimen/add_reserve_fragment_view_padding_left_right"
+      android:paddingRight="@dimen/add_reserve_fragment_view_padding_left_right" />
+  <!--联系人-->
+  <RelativeLayout
+      android:id="@+id/rl_link_man"
+      style="@style/AddReserveFragmentEveryRlStyle">
+
+    <TextView
+        style="@style/AddReserveFragmentEveryRequiredPreTvStyle"
+        android:text="联系人" />
+
+    <TextView
+        android:id="@+id/tv_link_man"
+        style="@style/AddReserveFragmentEveryRequiredTvStyle" />
+  </RelativeLayout>
+
+  <View style="@style/DividerLineBlack" />
+  <!--联系电话-->
+  <RelativeLayout
+      android:id="@+id/rl_contact_phone"
+      style="@style/AddReserveFragmentEveryRlStyle">
+
+    <TextView
+        style="@style/AddReserveFragmentEveryRequiredPreTvStyle"
+        android:text="联系电话" />
+
+    <TextView
+        android:id="@+id/tv_contact_phone"
+        style="@style/AddReserveFragmentEveryRequiredTvStyle" />
+  </RelativeLayout>
+
+  <View style="@style/DividerLineBlack" />
+  <!--用餐日期-->
+  <RelativeLayout
+      android:id="@+id/rl_dining_date"
+      style="@style/AddReserveFragmentEveryRlStyle">
+
+    <TextView
+        style="@style/AddReserveFragmentEveryRequiredPreTvStyle"
+        android:text="用餐日期" />
+
+    <TextView
+        android:id="@+id/tv_dining_date"
+        style="@style/AddReserveFragmentEveryRequiredTvStyle" />
+  </RelativeLayout>
+
+  <View style="@style/DividerLineBlack" />
+  <!--用餐时间-->
+  <RelativeLayout
+      android:id="@+id/rl_dining_time"
+      style="@style/AddReserveFragmentEveryRlStyle">
+
+    <TextView
+        style="@style/AddReserveFragmentEveryRequiredPreTvStyle"
+        android:text="用餐时间" />
+
+    <TextView
+        android:id="@+id/tv_dining_time"
+        style="@style/AddReserveFragmentEveryRequiredTvStyle" />
+  </RelativeLayout>
+
+  <View style="@style/DividerLineBlack" />
+  <!--客人数-->
+  <RelativeLayout
+      android:id="@+id/rl_people_num"
+      style="@style/AddReserveFragmentEveryRlStyle">
+
+    <TextView
+        style="@style/AddReserveFragmentEveryRequiredPreTvStyle"
+        android:text="顾客人数" />
+
+    <TextView
+        android:id="@+id/tv_people_num"
+        style="@style/AddReserveFragmentEveryRequiredTvStyle" />
+  </RelativeLayout>
+
+  <View style="@style/DividerLineBlack" />
+  <!--安排桌位-->
+  <RelativeLayout
+      android:id="@+id/rl_arrange_table"
+      style="@style/AddReserveFragmentEveryRlStyle">
+
+    <TextView
+        style="@style/AddReserveFragmentEveryRequiredPreTvStyle"
+        android:text="安排桌位" />
+
+    <TextView
+        android:id="@+id/tv_arrange_table"
+        style="@style/AddReserveFragmentEveryRequiredTvStyle"
+        android:hint="可选*" />
+  </RelativeLayout>
+
+  <View
+      style="@style/DividerLineBlack"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:paddingLeft="@dimen/add_reserve_fragment_view_padding_left_right"
+      android:paddingRight="@dimen/add_reserve_fragment_view_padding_left_right" />
+
+  <RelativeLayout style="@style/MatchWidthAndMatchHeight">
+    <!--确定、取消-->
+    <include
+        style="@style/WrapWidthAndWrapHeight"
+        layout="@layout/layout_start_bill_fabs"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="bottom" />
+  </RelativeLayout>
+</LinearLayout>

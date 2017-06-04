@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndMatchHeight"
+    android:padding="@dimen/reserve_activity_rl_add_reserve_padding"
+    android:visibility="gone">
+
+  <TextView
+      android:id="@+id/tv_title"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_centerHorizontal="true"
+      android:text="预订单"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_title" />
+
+  <View
+
+      style="@style/DividerLineBlack"
+      android:layout_below="@id/tv_title"
+      android:layout_marginTop="@dimen/margin_1_5" />
+
+  <TextView
+      android:id="@+id/tv_no_order"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_centerInParent="true"
+      android:text="无预订单"
+      android:textColor="@color/black"
+      android:textSize="@dimen/reserve_activity_rl_add_reserve_tv_no_order_text_size" />
+
+  <ImageButton
+      android:id="@+id/ibtn_add_no"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="@dimen/margin_1_5"
+      android:background="@drawable/selector_btn_start_order"
+      android:scaleType="centerCrop" />
+
+  <View
+      style="@style/DividerLineBlack"
+      android:layout_above="@id/ibtn_add_no"
+      android:layout_marginBottom="@dimen/margin_1_5" />
+</RelativeLayout>

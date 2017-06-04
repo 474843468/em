@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndWrapHeight"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <!--<View-->
+      <!--android:id="@+id/vip_info_divider_top"-->
+      <!--style="@style/DividerLineBlackHalf" />-->
+
+  <LinearLayout
+      android:id="@+id/ll_vip_info_content"
+      style="@style/MatchWidthAndWrapHeight">
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:id="@+id/tv_vip_recharge_record_time"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="2016-10-06 下午16:34:20"
+        android:textColor="@color/black" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:id="@+id/tv_vip_recharge_record_money"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="8000"
+        android:textColor="@color/black" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:id="@+id/tv_vip_recharge_record_giving"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="3000"
+        android:textColor="@color/black" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2">
+
+      <!--<Button-->
+          <!--android:id="@+id/btn_vip_recharge_record_action"-->
+          <!--style="@style/MatchWidthAndWrapHeight"-->
+          <!--android:layout_centerHorizontal="true"-->
+          <!--android:layout_marginBottom="@dimen/margin_1_5"-->
+          <!--android:layout_marginLeft="@dimen/margin_4_5"-->
+          <!--android:layout_marginRight="@dimen/margin_4_5"-->
+          <!--android:layout_marginTop="@dimen/margin_1_5"-->
+          <!--android:background="@drawable/selector_vip_recharge_record_charge_again"-->
+          <!--android:text="冲销"-->
+          <!--android:textColor="@color/black"-->
+          <!--android:textSize="@dimen/text_font_size_normal" />     -->
+      <Button
+          android:id="@+id/btn_vip_recharge_record_action"
+          style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginBottom="@dimen/margin_1_5"
+      android:layout_marginLeft="@dimen/margin_4_5"
+      android:layout_marginRight="@dimen/margin_4_5"
+      android:layout_marginTop="@dimen/margin_1_5"
+          android:layout_centerHorizontal="true"
+          android:background="@drawable/selector_vip_charge_against_btn"
+          android:text="冲销"
+          android:textColor="@color/white"
+          android:textSize="@dimen/text_font_size_normal" />
+    </RelativeLayout>
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+  </LinearLayout>
+
+  <View
+      android:id="@+id/view_below"
+      style="@style/DividerLineBlackHalf"
+      android:layout_below="@id/ll_vip_info_content"></View>
+
+
+</RelativeLayout>

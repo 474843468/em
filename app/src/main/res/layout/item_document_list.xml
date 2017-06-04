@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_document_list_view"
+    style="@style/MatchWidthAndWrapHeight"
+    android:orientation="vertical"
+
+    >
+  <!--左边-->
+  <FrameLayout
+      android:id="@+id/fl_kitchen_print_document_type"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_centerVertical="true"
+      android:padding="@dimen/padding_small">
+
+    <TextView
+        android:id="@+id/tv_document_list_add_type"
+        style="@style/WrapWidthAndWrapHeight"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:drawableTop="@mipmap/ic_document_list_add"
+        android:gravity="center_horizontal"
+        android:text="加菜"
+        android:textSize="@dimen/text_font_size_small"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_document_list_retreat_type"
+        style="@style/WrapWidthAndWrapHeight"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:drawableTop="@mipmap/ic_document_list_retreat"
+        android:gravity="center_horizontal"
+        android:text="退菜"
+        android:textSize="@dimen/text_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_document_list_merge_type"
+        style="@style/WrapWidthAndWrapHeight"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:drawableTop="@mipmap/ic_document_list_merge"
+        android:gravity="center_horizontal"
+        android:text="并桌"
+        android:textSize="@dimen/text_font_size_small"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_document_list_move_type"
+        style="@style/WrapWidthAndWrapHeight"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:drawableTop="@mipmap/ic_document_list_move"
+        android:gravity="center_horizontal"
+        android:text="移桌"
+        android:textSize="@dimen/text_font_size_small"
+        android:visibility="gone" />
+  </FrameLayout>
+  <!--右边-->
+  <RelativeLayout
+      android:id="@+id/rl_temp_right"
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_toRightOf="@id/fl_kitchen_print_document_type"
+      android:padding="@dimen/padding_normal">
+    <!--是否已打印字样-->
+    <FrameLayout
+        android:id="@+id/fl_temp"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+      <TextView
+          android:id="@+id/tv_document_list_no_printed"
+          style="@style/WrapWidthAndWrapHeight"
+          android:text="未打印"
+          android:textColor="@color/main_tab_text_color_selected"
+          android:visibility="gone" />
+
+      <TextView
+          android:id="@+id/tv_document_list_printed"
+          style="@style/WrapWidthAndWrapHeight"
+          android:text="已打印"
+          android:textColor="#00bfa5" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_kitchen_print_center"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_margin="@dimen/margin_1_5">
+
+      <TextView
+          android:id="@+id/tv_kitchen_print_place_type"
+          style="@style/WrapWidthAndWrapHeight"
+          android:text="大厅"
+          android:textColor="@color/main_tab_text_color_selected"
+          android:textSize="@dimen/text_font_size_small" />
+
+      <TextView
+          android:id="@+id/tv_kitchen_print_table_num"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_marginLeft="@dimen/margin_2_5"
+          android:layout_toRightOf="@id/tv_kitchen_print_place_type"
+          android:text="1号桌"
+          android:textColor="#00bfa5"
+          android:textSize="@dimen/text_font_size_small" />
+
+      <TextView
+          android:id="@+id/tv_kitchen_print_order_no"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_marginLeft="@dimen/margin_2_5"
+          android:layout_toRightOf="@id/tv_kitchen_print_table_num"
+          android:textSize="@dimen/text_font_size_small" />
+
+      <TextView
+          android:id="@+id/tv_kitchen_print_category"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_centerHorizontal="true"
+          android:text="类型"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_size_small" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_kitchen_print_documents"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_below="@id/rl_kitchen_print_center"
+        android:layout_margin="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:layout_toLeftOf="@id/fl_temp"
+        android:lineSpacingExtra="@dimen/item_document_list_tv_kitchen_print_documents_lineSpacingExtra"
+        android:text="糖醋里脊(1)"
+        android:textSize="@dimen/text_font_size_small" />
+  </RelativeLayout>
+
+  <View
+      style="@style/DividerLineBlack"
+      android:layout_below="@id/rl_temp_right"
+      android:paddingTop="@dimen/padding_small"></View>
+
+</RelativeLayout>

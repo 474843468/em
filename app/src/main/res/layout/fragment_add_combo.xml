@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <ListView
+      android:id="@+id/lv_combo_group"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:divider="@null"
+      android:dividerHeight="@dimen/add_combo_fragment_lv_combo_group_dividerHeight"></ListView>
+
+  <View
+      android:id="@+id/divider"
+      style="@style/DividerLineGray"
+      android:layout_marginBottom="@dimen/margin_1_5"
+      android:layout_marginTop="@dimen/margin_1_5" />
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_wait_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:text="暂不上菜"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/sb_wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_wait_title"
+        android:paddingLeft="@dimen/padding_normal"
+        android:paddingRight="@dimen/padding_normal"
+        app:kswTintColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tv_wait_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/sb_wait"
+        android:text="(选中将会覆盖每个商品的'暂不上菜'选项)" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_2_5"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/add_combo_fragment_btn_confirm_padding_left"
+        android:paddingRight="@dimen/add_combo_fragment_btn_confirm_padding_right"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_btn_add_combo"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_2_5"
+        android:layout_toLeftOf="@id/btn_confirm"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/add_combo_fragment_btn_confirm_padding_left"
+        android:paddingRight="@dimen/add_combo_fragment_btn_confirm_padding_right"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_btn_del_combo"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_refund"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_2_5"
+        android:layout_toLeftOf="@id/btn_confirm"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/add_combo_fragment_btn_confirm_padding_left"
+        android:paddingRight="@dimen/add_combo_fragment_btn_confirm_padding_right"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_btn_refund_combo"
+        android:text="退菜"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/btn_take_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_2_5"
+        android:layout_toLeftOf="@id/btn_refund"
+        android:paddingBottom="@dimen/padding_big"
+        android:paddingLeft="@dimen/add_combo_fragment_btn_confirm_padding_left"
+        android:paddingRight="@dimen/add_combo_fragment_btn_confirm_padding_right"
+        android:paddingTop="@dimen/padding_big"
+        android:background="@drawable/selector_btn_take_food_combo"
+        android:text="取餐"
+        android:textColor="@color/white"
+        android:visibility="invisible" />
+  </RelativeLayout>
+
+</LinearLayout>

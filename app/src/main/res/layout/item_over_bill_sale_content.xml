@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndWrapHeight">
+
+  <TextView
+      android:id="@+id/tv_name"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_centerVertical="true" />
+
+  <TextView
+      android:id="@+id/tv_sale_num"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:textColor="@color/colorAccent" />
+</RelativeLayout>

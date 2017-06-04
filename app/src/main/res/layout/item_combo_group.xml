@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+  <RelativeLayout
+      android:id="@+id/rl_combo_group"
+      android:layout_width="@dimen/item_combo_group_rl_combo_group_width"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:padding="@dimen/padding_normal"
+      android:background="@drawable/bg_combo_group">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <TextView
+        android:id="@+id/tv_num_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <TextView
+        android:id="@+id/tv_division"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_num_all"
+        android:layout_marginRight="2dp"
+        android:text="/"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <TextView
+        android:id="@+id/tv_num_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/tv_division"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_font_size_normal" />
+  </RelativeLayout>
+  <com.psi.easymanager.widget.NestGridView
+      android:id="@+id/gv_prod"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/rl_combo_group"
+      android:horizontalSpacing="@dimen/item_combo_group_gv_prod_space"
+      android:numColumns="6"
+      android:verticalSpacing="@dimen/item_combo_group_gv_prod_space"></com.psi.easymanager.widget.NestGridView>
+</RelativeLayout>

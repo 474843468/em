@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+  <ImageButton
+      android:id="@+id/ibtn_cancel"
+      style="@style/StartBillFabStyle"
+      android:background="@drawable/selector_btn_cancel_red" />
+
+  <Space
+      android:layout_width="@dimen/layout_start_bill_fabs_space_width"
+      android:layout_height="wrap_content" />
+
+  <ImageButton
+      android:id="@+id/ibtn_confirm"
+      style="@style/StartBillFabStyle"
+      android:background="@drawable/selector_btn_confirm_blue" />
+</LinearLayout>

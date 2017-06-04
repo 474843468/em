@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.psi.easymanager.widget.SwipeBackLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_view"
+    style="@style/MatchWidthAndMatchHeight">
+
+  <LinearLayout
+      style="@style/MatchWidthAndMatchHeight"
+      android:background="@mipmap/bg_main">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/margin_of_container"
+        android:layout_weight="3"
+        android:padding="@dimen/padding_big"
+        android:background="@color/white">
+
+      <TextView
+          android:id="@+id/tv_member_centre_title"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_centerHorizontal="true"
+          android:text="设置"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_title" />
+
+      <View
+          android:id="@+id/divider_1"
+          style="@style/DividerLineBlack"
+          android:layout_below="@id/tv_member_centre_title"
+          android:layout_marginTop="@dimen/margin_2_5" />
+
+      <RadioGroup
+          android:id="@+id/rg_buttons"
+          style="@style/MatchWidthAndWrapHeight"
+          android:layout_below="@id/divider_1"
+          android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_business_model"
+            style="@style/MoreFragmentRb"
+            android:checked="false"
+            android:text="系统配置" />
+
+        <View style="@style/DividerLineGray" />
+
+        <RadioButton
+            android:id="@+id/rb_ordinary_printer"
+            style="@style/MoreFragmentRb"
+            android:text="配置普通打印机" />
+
+        <View
+            android:id="@+id/view_ordinary_printer"
+            style="@style/DividerLineGray"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_permission_set"
+            style="@style/MoreFragmentRb"
+            android:text="权限设置"
+            android:visibility="gone" />
+
+        <View
+            style="@style/DividerLineGray"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_upload_setting"
+            style="@style/MoreFragmentRb"
+            android:text="上传设置数据"
+            android:visibility="gone" />
+
+        <View
+            style="@style/DividerLineGray"
+            android:visibility="gone" />
+
+        <RadioButton
+            android:id="@+id/rb_label_print"
+            style="@style/MoreFragmentRb"
+            android:text="配置标签打印机" />
+
+
+        <View style="@style/DividerLineGray" />
+
+        <RadioButton
+            android:id="@+id/rb_bt_printer"
+            style="@style/MoreFragmentRb"
+            android:text="配置蓝牙打印机" />
+
+        <View style="@style/DividerLineGray" />
+
+        <RadioButton
+            android:id="@+id/rb_about_fire"
+            style="@style/MoreFragmentRb"
+            android:text="关于逸掌柜" />
+
+      </RadioGroup>
+
+      <View
+          android:id="@+id/divider_2"
+          style="@style/DividerLineBlack"
+          android:layout_below="@id/rg_buttons" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/fl_more_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:padding="@dimen/padding_big"
+        android:background="@color/white" />
+
+  </LinearLayout>
+
+</com.psi.easymanager.widget.SwipeBackLayout>

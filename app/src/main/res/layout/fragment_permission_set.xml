@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWidthAndMatchHeight"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:gravity="center"
+      android:text="权限设置"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_title" />
+
+  <View
+      style="@style/DividerLineBlack"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginTop="@dimen/margin_1_5" />
+  <!--账单进入权限-->
+  <RelativeLayout style="@style/ModuleSwitchRl">
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:text="进入'账单'模块是否需要权限认证"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/sb_account_bill"
+        style="@style/SwitchButtonStyle"
+        android:layout_alignParentRight="true"
+        app:kswTintColor="@color/colorPrimary" />
+  </RelativeLayout>
+
+  <View style="@style/DividerLineGray" />
+  <!--账单更多权限-->
+  <RelativeLayout style="@style/ModuleSwitchRl">
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:text="进入'更多'模块是否需要权限认证"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/sb_more"
+        style="@style/SwitchButtonStyle"
+        android:layout_alignParentRight="true"
+        app:kswTintColor="@color/colorPrimary" />
+  </RelativeLayout>
+
+  <View style="@style/DividerLineGray" />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:text="如果需要验证，打开选项，并在Fire后台-员工的职级管理中不勾选这两个权限"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_normal" />
+</LinearLayout>

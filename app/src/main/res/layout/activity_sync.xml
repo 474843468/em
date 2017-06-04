@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWidthAndMatchHeight"
+    android:background="@mipmap/bg_main">
+
+  <include layout="@layout/layout_progress_view"></include>
+
+  <TextView
+      android:id="@+id/tv_data_size"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="@dimen/margin_16_5"
+      android:text="更新0条数据"
+      android:textColor="@color/colorAccent"
+      android:textSize="@dimen/text_font_size_normal" />
+
+  <com.daimajia.numberprogressbar.NumberProgressBar
+      android:id="@+id/number_progress_bar"
+      style="@style/NumberProgressBar_Funny_Orange"
+      android:layout_width="@dimen/sync_activity_number_progress_bar_layout_width"
+      android:layout_height="@dimen/sync_activity_number_progress_bar_layout_height"
+      android:layout_above="@id/tv_data_size"
+      android:layout_centerHorizontal="true"
+      android:layout_marginBottom="@dimen/margin_1_5"
+      custom:progress_reached_bar_height="@dimen/sync_activity_number_progress_bar_reach_height"
+      custom:progress_text_size="@dimen/text_font_size_normal"
+      custom:progress_unreached_bar_height="@dimen/sync_activity_number_progress_bar_reach_height" />
+</RelativeLayout>

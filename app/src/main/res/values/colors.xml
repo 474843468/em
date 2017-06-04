@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#4CAF50</color>
+  <color name="colorAccent">#FF5722</color>
+  <color name="divider">#B6B6B6</color>
+  <color name="primary_text">#212121</color>
+  <color name="secondary_text">#727272</color>
+
+  <color name="white">#ffffff</color>
+  <color name="black">#000000</color>
+  <color name="gray_dark">#616161</color>
+  <color name="gray_light">#9e9e9e</color>
+  <color name="red">#dd191d</color>
+
+  <!--CheckOut-->
+  <color name="gray_page_bg">#bdbdbd</color>
+  <color name="color_pay_view_btn">#039be5</color>
+
+  <!--Login-->
+  <color name="login_kbd_bg">#33475f</color>
+  <color name="login_user_store_bg">#78e0e0e0</color>
+
+  <!--Main-->
+  <color name="main_tab_text_color_selected">#eb4f38</color>
+  <color name="main_tab_text_color_unselected">#33475f</color>
+
+  <!--CashMenu-->
+  <color name="material_blue">#03a9f4</color>
+  <color name="green">#00bfa5</color>
+  <color name="grey_bg">#e0e0e0</color>
+  <color name="collection_info_divider_color">#525252</color>
+  <color name="color_current_cate_name">#29b6f6</color>
+  <color name="color_disconnect">#ad1457</color>
+
+  <!--商品item普通状态-->
+  <color name="item_prod_container_status_normal">#26c6da</color>
+  <color name="item_prod_content_status_normal">#00acc1</color>
+  <!--商品item停售状态-->
+  <color name="item_prod_container_status_stop_sale">#78909c</color>
+  <color name="item_prod_content_status_stop_sale">#546e7a</color>
+  <!--商品item双单位-->
+  <color name="item_prod_container_status_multiple_unit">#ff7043</color>
+  <color name="item_prod_content_status_multiple_unit">#f4511e</color>
+  <!--商品item套餐-->
+  <color name="item_prod_container_status_combo">#26a69a</color>
+  <color name="item_prod_content_status_combo">#00897b</color>
+  <!--商品Item点菜数量-->
+  <color name="item_prod_num">#e84e40</color>
+  <!--分类字体颜色 选中-->
+  <color name="item_cate_text_color_selected">#ffffff</color>
+  <!--分类字体颜色 未选中-->
+  <color name="item_cate_text_color_unselected">#212121</color>
+
+  <!--空桌item普通状态-->
+  <color name="item_empty_table_container_status_normal">#26c6da</color>
+  <color name="item_empty_table_content_status_normal">#00acc1</color>
+  <!--占用桌item普通状态-->
+  <color name="item_occupy_table_container_status_normal">#ff7043</color>
+  <color name="item_occupy_table_content_status_normal">#f4511e</color>
+  <!--零售单item普通状态-->
+  <color name="item_retail_container_status_normal">#26c6da</color>
+  <color name="item_retail_content_status_normal">#00acc1</color>
+  <!--桌台 零售单 item选中状态-->
+  <color name="item_sel_table_container_status_normal">#8d6e63</color>
+  <color name="item_sel_table_content_status_normal">#6d4c41</color>
+
+  <!--已结账单 账单明细-->
+  <color name="item_over_bill_detail_container_unsel">#26c6da</color>
+  <color name="item_over_bill_detail_content_unsel">#00acc1</color>
+  <!--已结账单 账单汇总-->
+  <color name="item_over_bill_collect_container_unsel">#26c6da</color>
+  <color name="item_over_bill_collect_content_unsel">#00acc1</color>
+  <!--已结账单 销售统计-->
+  <color name="item_over_bill_sale_container_unsel">#26c6da</color>
+  <color name="item_over_bill_sale_content_unsel">#00acc1</color>
+  <!--已结账单 选中-->
+  <color name="item_over_bill_container_sel">#8d6e63</color>
+  <color name="item_over_bill_content_sel">#6d4c41</color>
+
+  <!--未下单Details-->
+  <color name="item_details_unorder">#039be5</color>
+  <!--已下单Details-->
+  <color name="item_details_ordered">#0a8f08</color>
+  <!--已退菜Details-->
+  <color name="item_details_refund">#6d4c41</color>
+  <!--已上Details-->
+  <color name="item_details_serving">#d81b60</color>
+
+  <!--Vip-->
+  <color name="vip_crush_item">#d5c59f</color>
+  <color name="vip_information_text_color">#f4511e</color>
+  <color name="vip_title_bg">#25BDFE</color>
+  <color name="transparent_color">#00000000</color>
+  <color name="vip_tab_bg">#29b6f6</color>
+
+  <drawable name= "abc_ic_ab_back_mtrl_am_alpha">@drawable/abc_ic_ab_back_material</drawable>
+
+</resources>

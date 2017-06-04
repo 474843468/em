@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_small"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+  <RelativeLayout
+      android:id="@+id/rl_vip_card_num"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="@dimen/padding_small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="电话号码"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/tv_vip_card_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_vip_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/rl_vip_card_num"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:padding="@dimen/padding_small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="会员名"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/tv_vip_card_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_vip_card_balance"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/rl_vip_name"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:padding="@dimen/padding_small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="余额"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/tv_vip_card_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_vip_card_level"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/rl_vip_card_balance"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:padding="@dimen/padding_small"
+      android:visibility="gone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="会员等级"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/tv_vip_card_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_use_balance"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/rl_vip_card_level"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:padding="@dimen/padding_small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="使用余额"
+        android:textColor="@color/primary_text" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/sb_switch_use_balance"
+        style="@style/SwitchButtonStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:checked="true"
+        app:kswTintColor="@color/colorPrimary" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_receivable"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/rl_use_balance"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:padding="@dimen/padding_small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="应收"
+        android:textColor="@color/primary_text" />
+
+    <TextView
+        android:id="@+id/tv_receivable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      android:id="@+id/rl_received"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/rl_receivable"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:padding="@dimen/padding_small">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="实收"
+        android:textColor="@color/primary_text" />
+
+    <EditText
+        android:id="@+id/et_received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:inputType="numberDecimal" />
+  </RelativeLayout>
+  <!--<Button-->
+      <!--android:layout_width="match_parent"-->
+      <!--android:layout_height="wrap_content" -->
+      <!--android:layout_alignParentBottom="true"-->
+      <!--android:background="@drawable/bg_pay_rl"-->
+      <!--android:text="会员登出"-->
+      <!--/>-->
+</RelativeLayout>

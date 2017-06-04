@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_cash_bill_btns"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginBottom="@dimen/margin_1_5">
+
+  <ImageButton
+      android:id="@+id/ibtn_start_bill"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerVertical="true"
+      android:background="@drawable/selector_btn_start_order"
+      android:scaleType="centerCrop" />
+
+  <ImageButton
+      android:id="@+id/ibtn_modify_bill"
+     style="@style/CashBillFragmentCashBillFab"
+      android:layout_toRightOf="@id/ibtn_start_bill"
+      android:background="@drawable/selector_btn_modify_order"
+      />
+
+  <ImageButton
+      android:id="@+id/ibtn_order_bill"
+      style="@style/CashBillFragmentCashBillFab"
+      android:layout_toRightOf="@id/ibtn_modify_bill"
+      android:background="@drawable/selector_btn_confirm_order"
+       />
+
+  <ImageButton
+      android:id="@+id/ibtn_print_bill"
+      style="@style/CashBillFragmentCashBillFab"
+      android:layout_toRightOf="@id/ibtn_order_bill"
+      android:background="@drawable/selector_btn_print_bill"
+ />
+</RelativeLayout>

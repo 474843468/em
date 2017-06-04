@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWidthAndMatchHeight"
+    android:background="@color/white">
+
+  <LinearLayout
+      style="@style/MatchWidthAndMatchHeight"
+      android:paddingLeft="@dimen/padding_normal"
+      android:paddingRight="@dimen/padding_normal"
+      android:background="@color/white"
+      android:orientation="vertical">
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:gravity="center"
+        android:text="系统配置"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_big"
+        android:textStyle="bold" />
+
+    <View
+        style="@style/DividerLineBlack"
+        android:layout_marginBottom="@dimen/margin_2_5"
+        android:layout_marginTop="@dimen/margin_2_5" />
+
+    <LinearLayout
+        style="@style/MatchWidthAndWrapHeight"
+        android:orientation="vertical">
+      <!--快速开单-->
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:paddingBottom="@dimen/margin_2_5"
+          android:paddingTop="@dimen/margin_2_5">
+
+        <TextView
+            android:id="@+id/tv_fast_order"
+            style="@style/WrapWidthAndWrapHeight"
+            android:text="极速开单"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_below="@id/tv_fast_order"
+            android:text="无需选择桌台,点开单按钮,直接开新单"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_fast_open_bill"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswTintColor="@color/colorPrimary" />
+      </RelativeLayout>
+
+      <View style="@style/DividerLineGray" />
+      <!--点单完毕，点确认按钮后，是否自动切换到结账页面-->
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:paddingBottom="@dimen/margin_2_5"
+          android:paddingTop="@dimen/margin_2_5">
+
+        <TextView
+            android:id="@+id/tv_turn_check_out"
+            style="@style/WrapWidthAndWrapHeight"
+            android:text="下单完自动打开结账页"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_below="@id/tv_turn_check_out"
+            android:text="点完单,下单之后马上结账,一般用于零售/快餐模式"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_auto_switch_over_bill"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswTintColor="@color/colorPrimary" />
+      </RelativeLayout>
+
+      <View style="@style/DividerLineGray" />
+      <!--商品点单后,能直接结账-->
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:paddingBottom="@dimen/margin_2_5"
+          android:paddingTop="@dimen/margin_2_5">
+
+        <TextView
+            android:id="@+id/tv_auto_order"
+            style="@style/WrapWidthAndWrapHeight"
+            android:text="点单直接结账"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_below="@id/tv_auto_order"
+            android:text="隐藏下单按钮,点单后,不用再点下单,下单和结账合并成一步完成,提高效率"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_auto_order"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswTintColor="@color/colorPrimary" />
+      </RelativeLayout>
+
+      <View style="@style/DividerLineGray" />
+
+      <!--结账完毕 是否自动开单-->
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:paddingBottom="@dimen/margin_2_5"
+          android:paddingTop="@dimen/margin_2_5">
+
+        <TextView
+            android:id="@+id/tv_over_auto_start_bill"
+            style="@style/WrapWidthAndWrapHeight"
+            android:text="结账完自动开零售单"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_below="@id/tv_over_auto_start_bill"
+            android:text="结账完毕,系统自动为您开一个零售单,不用再点开单,可以直接点单"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_over_auto_start_bill"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswTintColor="@color/colorPrimary" />
+      </RelativeLayout>
+
+      <View style="@style/DividerLineGray" />
+
+      <!--会员充值 消费是否打印凭证-->
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:paddingBottom="@dimen/margin_2_5"
+          android:paddingTop="@dimen/margin_2_5">
+
+        <TextView
+            android:id="@+id/tv_vip_recharge_consume_print_voucher"
+            style="@style/WrapWidthAndWrapHeight"
+            android:text="会员充值,消费是否打印凭证"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_below="@id/tv_vip_recharge_consume_print_voucher"
+            android:text="打印会员充值,消费凭证,方便会员了解充值,消费情况"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_vip_recharge_consume_print_voucher"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswTintColor="@color/colorPrimary" />
+      </RelativeLayout>
+
+      <View style="@style/DividerLineGray" />
+
+      <!--财务联是否打印分类统计-->
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:paddingBottom="@dimen/margin_2_5"
+          android:paddingTop="@dimen/margin_2_5">
+
+        <TextView
+            android:id="@+id/tv_finance_print_category"
+            style="@style/WrapWidthAndWrapHeight"
+            android:text="财务联是否打印分类统计信息"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/text_font_size_normal" />
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_below="@id/tv_finance_print_category"
+            android:text="打开此选项,打印财务联时,会额外打印单据的分类统计信息"
+            android:textSize="@dimen/text_font_size_small" />
+
+        <com.kyleduo.switchbutton.SwitchButton
+            android:id="@+id/sb_finance_print_category"
+            style="@style/SwitchButtonStyle"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:kswTintColor="@color/colorPrimary" />
+      </RelativeLayout>
+
+      <View style="@style/DividerLineGray" />
+    </LinearLayout>
+
+  </LinearLayout>
+
+</FrameLayout>

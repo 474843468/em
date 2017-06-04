@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndWrapHeight"
+    >
+
+  <RelativeLayout
+      style="@style/WrapWidthAndWrapHeight"
+      android:id="@+id/rl_des"
+      >
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:id="@+id/tv_name"
+        />
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:id="@+id/tv_format"
+        android:layout_below="@id/tv_name"
+        android:textColor="@color/colorAccent"
+        />
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:id="@+id/tv_method"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/tv_format"
+        android:textColor="@color/colorAccent"
+        />
+  </RelativeLayout>
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:id="@+id/tv_remarks"
+      android:layout_below="@id/rl_des"
+      android:textSize="@dimen/text_font_size_smaller"
+      />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:id="@+id/tv_disc"
+      android:layout_toRightOf="@id/rl_des"
+      android:layout_marginLeft="@dimen/margin_1_5"
+      />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:id="@+id/tv_money"
+      android:layout_alignParentRight="true"
+      android:textColor="@color/colorAccent"
+      />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:id="@+id/tv_mult_num"
+      android:layout_toLeftOf="@id/tv_money"
+      android:layout_marginRight="@dimen/margin_3_5"
+      android:gravity="right"
+      android:text="mult_num"
+      />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:id="@+id/tv_num"
+      android:layout_toLeftOf="@id/tv_mult_num"
+      android:layout_marginRight="@dimen/margin_3_5"
+      android:gravity="left"
+      android:text="num"
+      />
+</RelativeLayout>

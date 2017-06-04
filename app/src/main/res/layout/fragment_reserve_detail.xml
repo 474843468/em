@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    style="@style/MatchWidthAndMatchHeight"
+    android:paddingLeft="@dimen/reserve_detail_fragment_ll_container_padding_left_right"
+    android:paddingRight="@dimen/reserve_detail_fragment_ll_container_padding_left_right"
+    android:orientation="vertical">
+  <!--title-->
+  <LinearLayout
+      android:id="@+id/ll_title"
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:padding="@dimen/reserve_detail_fragment_ll_title_padding"
+      android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/MatchWidthAndWrapHeight"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="预订详情"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_font_title" />
+  </LinearLayout>
+
+  <View
+      android:id="@+id/view"
+      style="@style/DividerLineBlack"
+      android:layout_marginTop="@dimen/margin_1_5" />
+  <!--联系人-->
+  <RelativeLayout style="@style/ReserveDetailFragmentEveryDetailRlStyle">
+
+    <TextView
+        style="@style/ReserveDetailFragmentEveryDetailTvPreStyle"
+        android:text="联系人" />
+
+    <TextView
+        android:id="@+id/tv_link_man"
+        style="@style/ReserveDetailFragmentEveryDetailTvDetailStyle" />
+  </RelativeLayout>
+  <!--联系电话-->
+  <RelativeLayout style="@style/ReserveDetailFragmentEveryDetailRlStyle">
+
+    <TextView
+        style="@style/ReserveDetailFragmentEveryDetailTvPreStyle"
+        android:text="联系电话" />
+
+    <TextView
+        android:id="@+id/tv_contact_phone"
+        style="@style/ReserveDetailFragmentEveryDetailTvDetailStyle" />
+  </RelativeLayout>
+
+  <!--用餐时间-->
+  <RelativeLayout style="@style/ReserveDetailFragmentEveryDetailRlStyle">
+
+    <TextView
+        style="@style/ReserveDetailFragmentEveryDetailTvPreStyle"
+        android:text="用餐时间" />
+
+    <TextView
+        android:id="@+id/tv_dining_time"
+        style="@style/ReserveDetailFragmentEveryDetailTvDetailStyle" />
+  </RelativeLayout>
+
+  <!--桌台-->
+  <RelativeLayout style="@style/ReserveDetailFragmentEveryDetailRlStyle">
+
+    <TextView
+        style="@style/ReserveDetailFragmentEveryDetailTvPreStyle"
+        android:text="桌台安排" />
+
+    <TextView
+        android:id="@+id/tv_table_arrange"
+        style="@style/ReserveDetailFragmentEveryDetailTvDetailStyle" />
+  </RelativeLayout>
+
+  <View
+      style="@style/DividerLineBlack"
+      android:layout_marginTop="@dimen/margin_1_5" />
+
+  <RelativeLayout style="@style/MatchWidthAndMatchHeight">
+
+    <include
+        android:id="@+id/include_bottom_fabs"
+        style="@style/WrapWidthAndWrapHeight"
+        layout="@layout/layout_reserve_detail_bottom_fabs"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></include>
+
+    <View
+        android:id="@+id/view1"
+        style="@style/DividerLineBlack"
+        android:layout_above="@id/include_bottom_fabs"
+        android:layout_marginBottom="@dimen/margin_1_5" />
+    <!--详情-->
+    <FrameLayout
+        android:id="@+id/fl_detail"
+        style="@style/MatchWidthAndMatchHeight"
+        android:layout_above="@id/view1"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:background="#0ff"
+        android:visibility="gone"></FrameLayout>
+  </RelativeLayout>
+</LinearLayout>

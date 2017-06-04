@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_small">
+
+  <EditText
+      android:id="@+id/et_all_discount"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="折扣率(0-99)"
+      android:inputType="number" />
+
+  <RadioGroup
+      android:id="@+id/rg_all_discount_reason"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/et_all_discount"
+      android:orientation="vertical"
+      android:visibility="gone">
+
+    <RadioButton
+        android:id="@+id/rb_regular_customer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:checked="true"
+        android:text="老客户" />
+
+    <RadioButton
+        android:id="@+id/rb_cooperator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:text="合作单位" />
+  </RadioGroup>
+
+  <View
+      android:id="@+id/view_divider"
+      style="@style/DividerLineGray"
+      android:layout_below="@id/rg_all_discount_reason"
+      android:layout_marginBottom="@dimen/margin_1_5"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:visibility="gone" />
+
+  <CheckBox
+      android:id="@+id/cb_all_discount"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/view_divider"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:text="对设置为不允许打折的商品也打折"
+      android:textColor="#000000" />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndWrapHeight"
+    android:background="@color/white">
+
+  <View
+      android:id="@+id/vip_info_divider_top"
+      style="@style/DividerLineBlackHalf" />
+
+  <LinearLayout
+      android:id="@+id/ll_vip_info_content"
+      style="@style/MatchWidthAndWrapHeight"
+      android:orientation="horizontal"
+      android:layout_below="@id/vip_info_divider_top">
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="充值时间"
+        android:textColor="@color/black" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="充值金额"
+        android:textColor="@color/black" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="赠送金额"
+        android:textColor="@color/black" />
+
+    <!--<View-->
+    <!--android:layout_width="0.5dip"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--android:background="@color/black"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_width="0dip"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1.5"-->
+    <!--android:gravity="center"-->
+    <!--android:paddingBottom="10dip"-->
+    <!--android:paddingTop="10dip"-->
+    <!--android:text="状态"-->
+    <!--android:textColor="@color/black"-->
+    <!--/>-->
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:paddingBottom="@dimen/padding_normal"
+        android:paddingTop="@dimen/padding_normal"
+        android:gravity="center"
+        android:text="操作"
+        android:textColor="@color/black" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+  </LinearLayout>
+  <View style="@style/DividerLineBlackHalf"
+      android:layout_below="@id/ll_vip_info_content"/>
+</RelativeLayout>

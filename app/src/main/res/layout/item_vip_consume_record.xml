@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <View
+      android:id="@+id/vip_info_divider_top"
+      style="@style/DividerLineBlackHalf" />
+
+  <LinearLayout
+      android:id="@+id/ll_vip_info_content"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/vip_info_divider_top">
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:id="@+id/tv_vip_consume_record_time"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:gravity="center"
+        android:text="2016-10-06"
+        android:textColor="@color/black" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+    <TextView
+        android:id="@+id/tv_vip_consume_record_money"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="5"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:gravity="center"
+        android:text="8000.0"
+        android:textColor="@color/black" />
+
+    <View style="@style/DividerLineBlackVerticalHalf" />
+
+  </LinearLayout>
+
+  <View
+      android:id="@+id/view_below"
+      style="@style/DividerLineBlackHalf"
+      android:layout_below="@id/ll_vip_info_content"></View>
+
+
+</RelativeLayout>

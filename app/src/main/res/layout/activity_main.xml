@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <com.psi.easymanager.widget.InterceptClickLayout
+      android:id="@+id/content_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@mipmap/bg_main"
+      android:fitsSystemWindows="true"
+      tools:context=".ui.activity.MainActivity"
+      >
+
+    <include
+        android:id="@+id/MainTabs"
+        layout="@layout/layout_main_radio_group"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/MainTabs"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:layout_marginTop="@dimen/margin_1_5"
+        android:layout_marginBottom="@dimen/margin_1_5"
+        android:orientation="horizontal"
+        >
+      <!--左边容器-->
+      <FrameLayout
+          android:id="@+id/cash_content_left"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="32"
+          android:background="@color/white"
+          />
+      <!--右边-->
+      <FrameLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="68"
+          android:layout_marginLeft="@dimen/margin_1_5"
+          >
+
+        <FrameLayout
+            android:id="@+id/cash_content_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <include
+            android:id="@+id/rl_cash_btns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/margin_1_5"
+            android:layout_marginBottom="2dp"
+            layout="@layout/layout_main_cash_fabs"
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+          <ImageView
+              android:id="@+id/iv_message_click"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerHorizontal="true"
+              android:scaleType="centerCrop"
+              android:src="@mipmap/ic_message_click"
+              />
+
+          <ImageView
+              android:id="@+id/iv_network_error"
+              android:visibility="gone"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@id/iv_message_click"
+              android:layout_centerHorizontal="true"
+              android:background="@mipmap/ic_network_error_hint"
+              android:scaleType="centerCrop"
+              />
+
+        </RelativeLayout>
+
+      </FrameLayout>
+
+    </LinearLayout>
+
+  </com.psi.easymanager.widget.InterceptClickLayout>
+  <!--蒙层-->
+  <include layout="@layout/layout_progress_view"></include>
+</FrameLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      >
+
+    <Button
+        android:id="@+id/btn_1"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="1"
+        />
+
+    <Button
+        android:id="@+id/btn_2"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="2"
+        />
+
+    <Button
+        android:id="@+id/btn_3"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="3"
+        />
+
+    <Button
+        android:id="@+id/btn_4"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="4"
+        />
+
+    <Button
+        android:id="@+id/btn_5"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="5"
+        />
+
+    <Button
+        android:id="@+id/btn_6"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="6"
+        />
+
+    <Button
+        android:id="@+id/btn_7"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="7"
+        />
+
+    <Button
+        android:id="@+id/btn_8"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="8"
+        />
+
+    <Button
+        android:id="@+id/btn_9"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="9"
+        />
+
+    <Button
+        android:id="@+id/btn_0"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="0"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      >
+
+    <Button
+        android:id="@+id/btn_q"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="Q"
+        />
+
+    <Button
+        android:id="@+id/btn_w"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="W"
+        />
+
+    <Button
+        android:id="@+id/btn_e"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="E"
+        />
+
+    <Button
+        android:id="@+id/btn_r"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="R"
+        />
+
+    <Button
+        android:id="@+id/btn_t"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="T"
+        />
+
+    <Button
+        android:id="@+id/btn_y"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="Y"
+        />
+
+    <Button
+        android:id="@+id/btn_u"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="U"
+        />
+
+    <Button
+        android:id="@+id/btn_i"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="I"
+        />
+
+    <Button
+        android:id="@+id/btn_o"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="O"
+        />
+
+    <Button
+        android:id="@+id/btn_p"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="P"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      >
+
+    <Button
+        android:id="@+id/btn_a"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="A"
+        />
+
+    <Button
+        android:id="@+id/btn_s"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="S"
+        />
+
+    <Button
+        android:id="@+id/btn_d"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="D"
+        />
+
+    <Button
+        android:id="@+id/btn_f"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="F"
+        />
+
+    <Button
+        android:id="@+id/btn_g"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="G"
+        />
+
+    <Button
+        android:id="@+id/btn_h"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="H"
+        />
+
+    <Button
+        android:id="@+id/btn_j"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="J"
+        />
+
+    <Button
+        android:id="@+id/btn_k"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="K"
+        />
+
+    <Button
+        android:id="@+id/btn_l"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="L"
+        />
+
+    <Button
+        android:id="@+id/btn_back"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="退格"
+        />
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dip"
+      android:layout_weight="1"
+      >
+
+    <Button
+        android:id="@+id/btn_z"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="Z"
+        />
+
+    <Button
+        android:id="@+id/btn_x"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="X"
+        />
+
+    <Button
+        android:id="@+id/btn_c"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="C"
+        />
+
+    <Button
+        android:id="@+id/btn_v"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="V"
+        />
+
+    <Button
+        android:id="@+id/btn_b"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="B"
+        />
+
+    <Button
+        android:id="@+id/btn_n"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="N"
+        />
+
+    <Button
+        android:id="@+id/btn_m"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="M"
+        />
+
+    <Button
+        android:id="@+id/btn_123"
+        style="@style/FuzzyQueryKeyboardButtonWithTextStyle"
+        android:text="123"
+        />
+
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/FuzzyQueryKeyboardButtonWithTextSpecialStyle"
+        android:text="确认"
+        />
+
+  </LinearLayout>
+
+</LinearLayout>

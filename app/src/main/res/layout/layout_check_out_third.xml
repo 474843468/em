@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/padding_small"
+    android:paddingRight="@dimen/padding_small"
+    android:background="@drawable/bg_checkout_pay"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_pay_third_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_1_5"
+        android:text="第三方支付"
+        android:textColor="@color/color_pay_view_btn"
+        android:textSize="@dimen/text_font_size_big" />
+
+    <!--实收-->
+    <RelativeLayout
+        android:id="@+id/rl_pay_third_received"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:padding="@dimen/padding_normal"
+        android:background="@drawable/bg_pay_rl">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:text="实收:"
+          android:textColor="@color/white" />
+
+      <TextView
+          android:id="@+id/tv_pay_third_received"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+          android:text="0.0"
+          android:textColor="@color/white" />
+    </RelativeLayout>
+    <!--付款码-->
+    <LinearLayout
+        android:id="@+id/rl_pay_third_paycode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:padding="@dimen/padding_normal"
+        android:background="@drawable/bg_pay_rl">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:text="付款码:"
+          android:textColor="@color/white" />
+
+      <com.psi.easymanager.widget.HideSoftInputEditText
+          android:id="@+id/et_pay_third_paycode"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:cursorVisible="false"
+          android:inputType="number"
+          android:singleLine="true"
+          android:textColor="@color/white" />
+    </LinearLayout>
+  </LinearLayout>
+  <!--扫码支付按钮-->
+  <Button
+      android:visibility="gone"
+      android:id="@+id/btn_scan_pay"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="10dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:padding="@dimen/padding_small"
+      android:background="@drawable/selector_btn_confirm_pay"
+      android:gravity="center"
+      android:text="点击扫码"
+      android:textColor="@color/white"
+      android:textSize="@dimen/text_font_size_normal" />
+</LinearLayout>

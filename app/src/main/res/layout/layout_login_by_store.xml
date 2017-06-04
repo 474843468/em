@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/bg_login_user_store"
+    >
+
+  <TextView
+      android:id="@+id/tv_store_login_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:text="店家登录"
+      android:textSize="@dimen/text_font_title"
+      android:textColor="@color/primary_text"
+      />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_store_login_title"
+      android:layout_marginLeft="@dimen/login_activity_user_store_login_framework_margin_left_right"
+      android:layout_marginRight="@dimen/login_activity_user_store_login_framework_margin_left_right"
+      android:layout_marginTop="@dimen/login_activity_user_store_login_framework_margin_top"
+      android:orientation="vertical"
+      >
+    <!--用户名-->
+    <FrameLayout
+        android:id="@+id/fl_store_login_name"
+        style="@style/LoginActivityInputFramework"
+        android:layout_marginTop="@dimen/margin_3_5"
+        android:background="@drawable/bg_login_fl_unsel"
+        >
+
+      <TextView
+          android:id="@+id/tv_store_login_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:gravity="left"
+          android:hint="商家编号"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_small"
+          android:textColorHint="@color/secondary_text"
+          />
+    </FrameLayout>
+
+    <!--密码-->
+    <FrameLayout
+        android:id="@+id/fl_store_login_pwd"
+        style="@style/LoginActivityInputFramework"
+        android:layout_marginTop="@dimen/margin_3_5"
+        android:background="@drawable/bg_login_fl_unsel"
+        >
+
+      <TextView
+          android:id="@+id/tv_store_login_pwd"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true"
+          android:gravity="left"
+          android:hint="初始化密码"
+          android:inputType="textPassword"
+          android:textColor="#FF5722"
+          android:textSize="@dimen/text_font_size_small"
+          android:textColorHint="@color/secondary_text"
+          />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:text="提示:店家登录时需要连接到互联网,登录成功后会对收银机进行安全验证，并同步后台设置数据"
+        android:textSize="@dimen/store_login_hint"
+        android:textColor="@color/gray_dark"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2_5"
+        >
+
+      <Button
+          android:id="@+id/btn_cancel_store_login"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="@dimen/margin_3_5"
+          android:layout_weight="1"
+          android:background="@drawable/selector_login_button"
+          android:text="取\t消"
+          android:textColor="@color/white"
+          android:textSize="@dimen/store_login_text"
+          />
+
+      <Button
+          android:id="@+id/btn_confirm_store_login"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="2"
+          android:background="@drawable/selector_login_button"
+          android:text="确\t认"
+          android:textColor="@color/white"
+          android:textSize="@dimen/store_login_text"
+          />
+    </LinearLayout>
+  </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_normal">
+
+  <TextView
+      android:id="@+id/tv_prod_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      android:id="@+id/tv_format_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="@dimen/margin_2_5"
+      android:layout_toRightOf="@id/tv_prod_name"
+      android:textSize="@dimen/text_font_size_normal" />
+
+  <View
+      android:id="@+id/divider_1"
+      style="@style/DividerLineGray"
+      android:layout_below="@id/tv_prod_name" />
+
+  <TextView
+      android:id="@+id/tv_remarks_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/divider_1"
+      android:layout_marginLeft="@dimen/margin_4_5"
+      android:layout_marginTop="@dimen/margin_1_5"
+      android:text="备注:"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_normal" />
+
+  <com.zhy.view.flowlayout.TagFlowLayout
+      android:id="@+id/tags_remarks"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_remarks_title"
+      android:padding="@dimen/padding_normal"
+      app:max_select="3"></com.zhy.view.flowlayout.TagFlowLayout>
+
+  <View
+      android:id="@+id/divider_2"
+      style="@style/DividerLineGray"
+      android:layout_below="@id/tags_remarks" />
+
+  <TextView
+      android:id="@+id/tv_custom_remark_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/divider_2"
+      android:layout_marginLeft="@dimen/margin_4_5"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:text="自定义备注"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_normal" />
+
+  <EditText
+      android:id="@+id/et_custom_remark"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/tv_custom_remark_title"
+      android:layout_marginLeft="@dimen/margin_4_5"
+      android:layout_marginRight="@dimen/margin_4_5"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:maxLength="150"
+      android:gravity="top"
+      android:lines="3"/>
+
+  <TextView
+      android:id="@+id/tv_wait_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerVertical="true"
+      android:layout_marginBottom="@dimen/margin_10_5"
+      android:text="暂不上菜" />
+
+  <com.kyleduo.switchbutton.SwitchButton
+      android:id="@+id/sb_wait"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_centerVertical="true"
+      android:layout_marginBottom="@dimen/margin_10_5"
+      android:layout_toRightOf="@id/tv_wait_title"
+      android:paddingLeft="@dimen/margin_2_5"
+      android:paddingRight="@dimen/margin_2_5"
+      app:kswTintColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_confirm"
+        style="@style/BigHorizontalBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_confirm_btn"
+        android:text="确定" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        style="@style/BigHorizontalBtn"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btn_confirm"
+        android:background="@drawable/selector_delete_btn"
+        android:text="取消" />
+
+
+</RelativeLayout>

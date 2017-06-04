@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndMatchHeight"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+  <ImageButton
+      android:id="@+id/ibtn_add_detail"
+      style="@style/StartBillFabStyle"
+      android:background="@drawable/selector_btn_start_order" />
+
+  <Space
+      android:id="@+id/space"
+      android:layout_width="@dimen/layout_reserve_detail_bottom_fab_space_width"
+      android:layout_height="wrap_content" />
+
+  <ImageButton
+      android:id="@+id/ibtn_modify"
+      style="@style/StartBillFabStyle"
+      android:background="@drawable/selector_btn_modify_order" />
+
+  <Space
+      android:id="@+id/space_temp"
+      android:layout_width="@dimen/layout_reserve_detail_bottom_fab_space_width"
+      android:layout_height="wrap_content"
+      android:visibility="gone" />
+
+  <ImageButton
+      android:id="@+id/ibtn_reach"
+      android:layout_width="@dimen/layout_reserve_detail_bottom_fab_ibtn_width_height"
+      android:layout_height="@dimen/layout_reserve_detail_bottom_fab_ibtn_width_height"
+      android:background="@mipmap/ic_reach"
+      android:scaleType="centerCrop"
+      android:visibility="gone" />
+
+  <Space
+      android:id="@+id/space_temp1"
+      android:layout_width="@dimen/layout_reserve_detail_bottom_fab_space_width"
+      android:layout_height="wrap_content"
+      android:visibility="gone" />
+
+  <ImageButton
+      android:id="@+id/ibtn_delete"
+      android:layout_width="@dimen/layout_reserve_detail_bottom_fab_ibtn_width_height"
+      android:layout_height="@dimen/layout_reserve_detail_bottom_fab_ibtn_width_height"
+      android:background="@mipmap/ic_delete"
+      android:scaleType="centerCrop"
+      android:visibility="gone" />
+</LinearLayout>

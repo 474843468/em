@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_container"
+    style="@style/MatchWidthAndWrapHeight"
+    android:paddingBottom="@dimen/padding_big"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:paddingTop="@dimen/padding_big"
+    android:background="@drawable/selector_epay"
+    android:clickable="true"
+    android:orientation="horizontal">
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_vertical"
+      android:text="时间:"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      android:id="@+id/tv_time"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_vertical"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="@dimen/margin_2_5"
+      android:text="单号:"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      android:id="@+id/tv_order_no"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_vertical"
+      android:textColor="@color/colorAccent"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="@dimen/margin_2_5"
+      android:text="桌名"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      android:id="@+id/tv_table_name"
+      style="@style/WrapWidthAndWrapHeight"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      android:id="@+id/tv_type"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_marginLeft="@dimen/margin_2_5"
+      android:textColor="#009688"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      android:id="@+id/tv_money"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center_vertical"
+      android:layout_marginLeft="@dimen/margin_2_5"
+      android:text="支付金额"
+      android:textColor="#f4511e"
+      android:textSize="@dimen/text_font_size_big" />
+
+  <TextView
+      android:id="@+id/tv_status"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_weight="1"
+      android:gravity="right"
+      android:textSize="@dimen/text_font_size_big" />
+</LinearLayout>

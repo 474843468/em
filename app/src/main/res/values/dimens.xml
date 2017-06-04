@@ -1,0 +1,214 @@
+<resources>
+  <!--复用-->
+  <dimen name="text_font_size_big">20sp</dimen>
+  <dimen name="text_font_size_normal">16sp</dimen>
+  <dimen name="text_font_size_small">12sp</dimen>
+  <dimen name="text_font_size_smaller">8sp</dimen>
+  <dimen name="text_font_title">24sp</dimen>
+  <dimen name="text_font_prod_name">32sp</dimen>
+
+  <dimen name="text_font_guest_normal">16sp</dimen>
+  <dimen name="text_font_guest_item_normal">20sp</dimen>
+  <dimen name="text_font_guest_item_small">16sp</dimen>
+  <!--margin-->
+  <dimen name="margin_1_5">5dp</dimen>
+  <dimen name="margin_2_5">10dp</dimen>
+  <dimen name="margin_3_5">15dp</dimen>
+  <dimen name="margin_4_5">20dp</dimen>
+  <dimen name="margin_5_5">25dp</dimen>
+  <dimen name="margin_6_5">30dp</dimen>
+  <dimen name="margin_7_5">35dp</dimen>
+  <dimen name="margin_8_5">40dp</dimen>
+  <dimen name="margin_10_5">50dp</dimen>
+  <dimen name="margin_12_5">60dp</dimen>
+  <dimen name="margin_16_5">80dp</dimen>
+  <dimen name="margin_40_5">200dp</dimen>
+
+  <dimen name="padding_normal">10dp</dimen>
+  <dimen name="padding_big">15dp</dimen>
+  <dimen name="padding_small">5dp</dimen>
+  <dimen name="padding_drawable">5dp</dimen>
+  <dimen name="padding_more">20dp</dimen>
+  <!--容器左右间隔-->
+  <dimen name="margin_of_container">3dp</dimen>
+  <!--蒙层-->
+  <dimen name="progress_view_rl_center_width_height">200dp</dimen>
+  <dimen name="progress_view_rl_center_padding">20dp</dimen>
+  <dimen name="progress_view_progress_wheel_width_height">60dp</dimen>
+
+  <!--LoginActivity-->
+  <dimen name="login_activity_login_framework_width">280dp</dimen>
+  <dimen name="login_activity_login_framework_height">250dp</dimen>
+  <dimen name="login_activity_kbd_padding">0dp</dimen>
+  <dimen name="login_activity_kbd_btn_margin_left">0dp</dimen>
+  <dimen name="login_activity_kbd_btn_margin_right">0dp</dimen>
+  <dimen name="login_activity_title_text_size">19sp</dimen>
+  <dimen name="login_activity_title_margin_left">0dp</dimen>
+  <dimen name="login_activity_version_margin_left">0dp</dimen>
+  <dimen name="login_activity_version_margin_top">0dp</dimen>
+  <dimen name="login_activity_ip_margin_top">0dp</dimen>
+  <dimen name="login_activity_user_store_login_framework_margin_top">0dp</dimen>
+  <dimen name="login_activity_user_store_login_framework_margin_left_right">0dp</dimen>
+  <dimen name="login_activity_input_framework_padding_left_right">0dp</dimen>
+  <dimen name="login_activity_input_framework_padding_top_bottom">0dp</dimen>
+  <dimen name="login_activity_input_framework_margin_top">0dp</dimen>
+  <dimen name="login_activity_input_framework_tv_text_size">12sp</dimen>
+
+
+  <dimen name="login_ip_address_text">9sp</dimen>
+  <dimen name="user_login_text">9sp</dimen>
+  <dimen name="store_login_text">9sp</dimen>
+  <dimen name="store_login_hint">9sp</dimen>
+
+  <dimen name="main_content_margin_top_bottom">0dp</dimen>
+  <dimen name="main_content_margin_left_right">0dp</dimen>
+  <dimen name="main_left_tab_font_size">9sp</dimen>
+  <dimen name="main_left_tab_padding_top_bottom">0dp</dimen>
+
+  <!--CashFragment-->
+  <dimen name="menu_rcv_item_horizontal_space_width">2dp</dimen>
+  <dimen name="menu_rcv_item_vertical_space_height">10dp</dimen>
+
+  <dimen name="cate_rcv_item_horizontal_space_width">0dp</dimen>
+  <dimen name="cate_rcv_item_vertical_space_height">10dp</dimen>
+
+  <dimen name="find_bill_rcv_item_horizontal_space_width">5dp</dimen>
+  <dimen name="find_bill_rcv_item_vertical_space_height">5dp</dimen>
+
+  <dimen name="over_bill_sale_list_rcv_item_horizontal_space_width">15dp</dimen>
+  <dimen name="over_bill_sale_list_rcv_item_vertical_space_height">15dp</dimen>
+
+  <dimen name="over_bill_rcv_item_horizontal_space_width">10dp</dimen>
+  <dimen name="over_bill_rcv_item_vertical_space_height">10dp</dimen>
+
+  <dimen name="over_bill_rcv_content_horizontal_space_width">5dp</dimen>
+  <dimen name="over_bill_rcv_content_vertical_space_height">5dp</dimen>
+
+  <dimen name="layout_start_bill_fabs_space_width">10dp</dimen>
+
+  <dimen name="cash_menu_tv_width">80dp</dimen>
+  <dimen name="cash_menu_tv_height">40dp</dimen>
+
+  <dimen name="margin_card_view">0dp</dimen>
+  <dimen name="padding_card_view">0dp</dimen>
+
+  <!--FindBillFragment-->
+  <dimen name="find_bill_tv_width">100dp</dimen>
+  <dimen name="find_bill_tv_height">50dp</dimen>
+  <!--MainActivity-->
+  <dimen name="layout_login_by_store_fl_login_icon_width">90dp</dimen>
+  <dimen name="layout_login_by_store_fl_login_icon_height">90dp</dimen>
+  <dimen name="layout_main_radio_group_margin">1dp</dimen>
+  <!--ReserveActivity-->
+  <dimen name="reserve_activity_tv_date_title_width">120dp</dimen>
+  <dimen name="reserve_activity_et_search_width">300dp</dimen>
+  <dimen name="reserve_activity_et_search_padding">5dp</dimen>
+  <dimen name="reserve_activity_et_search_drawable_padding">5dp</dimen>
+  <!--ReverseManagerActivity-->
+  <dimen name="reserve_activity_rl_add_reserve_padding">5dp</dimen>
+  <dimen name="reserve_activity_rl_add_reserve_tv_no_order_text_size">18sp</dimen>
+  <!--AddReserveFragment-->
+  <dimen name="add_reserve_fragment_ll_container_padding">5dp</dimen>
+  <dimen name="add_reserve_fragment_view_padding_left_right">-5dp</dimen>
+  <!--ReserveDetailFragment-->
+  <dimen name="reserve_detail_fragment_ll_container_padding_left_right">5dp</dimen>
+  <dimen name="reserve_detail_fragment_ll_title_padding">5dp</dimen>
+  <!--ModifyDetailFragment-->
+  <dimen name="modify_reserve_fragment_ll_parent_padding">5dp</dimen>
+  <dimen name="modify_reserve_fragment_view_padding_left_right">-5dp</dimen>
+  <!--ReverseDetailsFragment-->
+  <dimen name="layout_reserve_detail_bottom_fab_space_width">10dp</dimen>
+  <dimen name="layout_reserve_detail_bottom_fab_ibtn_width_height">60dp</dimen>
+  <!--KitchenPrintActivity-->
+  <dimen name="kitchen_activity_rl_left_padding">15dp</dimen>
+  <dimen name="kitchen_activity_kitchen_print_hint_padding_top">8dp</dimen>
+  <dimen name="kitchen_activity_rl_right_padding">15dp</dimen>
+  <!--SyncActivity-->
+  <dimen name="sync_activity_number_progress_bar_layout_width">500dp</dimen>
+  <dimen name="sync_activity_number_progress_bar_layout_height">40dp</dimen>
+  <dimen name="sync_activity_number_progress_bar_reach_height">10dp</dimen>
+  <!--MessagesActivity-->
+  <dimen name="layout_message_left_iv_identity_width">60dp</dimen>
+  <dimen name="layout_message_left_iv_identity_height">80dp</dimen>
+  <dimen name="layout_message_left_ibtn_refund_width_height">60dp</dimen>
+  <!--DataUpdateActivity-->
+  <dimen name="data_update_activity_content_view_rel_width">350dp</dimen>
+  <dimen name="data_update_activity_content_view_rel_padding">15dp</dimen>
+  <dimen name="data_update_activity_content_view_iv_width">80dp</dimen>
+  <dimen name="data_update_activity_content_view_iv_height">80dp</dimen>
+  <dimen name="data_update_activity_content_view_iv_margin_top">10dp</dimen>
+  <dimen name="data_update_activity_content_view_iv_margin_left">20dp</dimen>
+  <dimen name="data_update_activity_content_view_btn_width">120dp</dimen>
+  <dimen name="data_update_activity_content_view_btn_height">35dp</dimen>
+  <dimen name="data_update_activity_content_view_btn_margin_top">10dp</dimen>
+  <dimen name="data_update_activity_content_view_btn_margin_right">10dp</dimen>
+
+  <!--OverBillActivity -->
+  <dimen name="over_bill_activity_ll_padding">20dp</dimen>
+  <!--OverBillDetailsListFragment-->
+  <dimen name="over_bill_details_list_fragment_rl_width">120dp</dimen>
+  <!--OverBillCollectionListFragment-->
+  <dimen name="over_bill_collection_list_fragment_rl_width">120dp</dimen>
+  <!--OverBillSaleListFragment-->
+  <dimen name="over_bill_sale_list_fragment_rl_width">120dp</dimen>
+  <!--CashMenuFragment-->
+  <dimen name="cash_menu_fragment_rcv_cate_padding_bottom">80dp</dimen>
+  <!--CashMenuFuzzyQueryFragment-->
+  <dimen name="fuzzy_query_fragment_item_product_tv_full_name_width_height">25dp</dimen>
+  <!--CheckoutFragment-->
+  <dimen name="check_out_fragment_gv_payment_mode_horizontal_spacing">10dp</dimen>
+  <dimen name="check_out_fragment_gv_payment_mode_vertical_spacing">20dp</dimen>
+  <!--CustomActivity-->
+  <dimen name="custom_activity_fab_custom_product_sure_padding_left_right">70dp</dimen>
+  <!--DayReportActivity-->
+  <dimen name="day_report_activity_rl_left_width">350dp</dimen>
+  <!--ShiftChangeActivity-->
+  <dimen name="shift_change_activity_rl_container_width">350dp</dimen>
+  <!--ExistComboFragment-->
+  <dimen name="exist_combo_fragment_btn_confirm_padding_left">70dp</dimen>
+  <dimen name="exist_combo_fragment_btn_confirm_padding_right">70dp</dimen>
+  <!--MemberDetailFragment-->
+  <dimen name="member_detail_fragment_iv_member_name_width">30dp</dimen>
+  <dimen name="member_detail_fragment_iv_member_name_height">30dp</dimen>
+  <!--ShiftBillCollectFragment-->
+  <dimen name="shift_bill_collect_fragment_rl_title_height">50dp</dimen>
+  <!--ShiftCateCollectFragment-->
+  <dimen name="shift_cate_collect_fragment_iv_cate_width">80dp</dimen>
+  <dimen name="shift_cate_collect_fragment_iv_cate_height">80dp</dimen>
+  <!--AddComboFragment-->
+  <dimen name="add_combo_fragment_lv_combo_group_dividerHeight">15dp</dimen>
+  <dimen name="add_combo_fragment_btn_confirm_padding_left">50dp</dimen>
+  <dimen name="add_combo_fragment_btn_confirm_padding_right">50dp</dimen>
+
+
+  <!--item document list-->
+  <dimen name="item_document_list_tv_kitchen_print_documents_lineSpacingExtra">2dp</dimen>
+  <!--item combo group-->
+  <dimen name="item_combo_group_rl_combo_group_width">300dp</dimen>
+  <dimen name="item_combo_group_gv_prod_space">5dp</dimen>
+  <!--item combo group prod-->
+  <dimen name="item_combo_group_prod_tv_prod_name_width">100dp</dimen>
+  <dimen name="item_combo_group_prod_tv_prod_name_height">100dp</dimen>
+  <!--item vip-->
+  <dimen name="item_vip_container_cardCornerRadius">5dp</dimen>
+  <!--itemProduct-->
+  <dimen name="item_product_tv_full_name_width">100dp</dimen>
+  <!--item OverBillDetailsListAdapter-->
+  <dimen name="over_bill_details_list_tv_margin_top">2dp</dimen>
+  <!--item ChildCate && Item Prod-->
+  <dimen name="item_prod_child_cate_adapter_view_click_width">170dp</dimen>
+  <dimen name="item_prod_child_cate_adapter_view_click_height">135dp</dimen>
+  <!--Item Table && Item RetailsOrder-->
+  <dimen name="item_table_retail_order_bg_click_width">160dp</dimen>
+  <dimen name="item_table_retail_order_bg_click_height">135dp</dimen>
+  <!--Item OverBill-->
+  <dimen name="item_over_bill_bg_click_width">160dp</dimen>
+  <dimen name="item_over_bill_bg_click_height">135dp</dimen>
+
+  <!--Item OverBillCollectionListAdapter OverBillSaleListAdapter-->
+  <dimen name="item_over_bill_sale_list_collection_list_width">100dp</dimen>
+  <dimen name="item_over_bill_sale_list_collection_list_height">100dp</dimen>
+  <!-- Default screen margins, per the Android Design guidelines. -->
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

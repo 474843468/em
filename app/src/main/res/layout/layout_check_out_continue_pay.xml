@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_checkout_pay"
+    >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      >
+    <TextView
+        android:id="@+id/tv_wait_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_2_5"
+        android:gravity="center"
+        android:text="还需收款:"
+        android:textColor="@color/color_pay_view_btn"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/btn_continue_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wait_pay"
+        android:layout_marginLeft="@dimen/margin_4_5"
+        android:layout_marginRight="@dimen/margin_4_5"
+        android:background="@drawable/selector_continue_pay_btn"
+        android:text="继续收款"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_tail_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_continue_pay"
+        android:layout_marginLeft="@dimen/margin_4_5"
+        android:layout_marginRight="@dimen/margin_4_5"
+        android:layout_marginTop="@dimen/margin_2_5"
+        android:background="@drawable/selector_continue_pay_btn"
+        android:text="抹零并结账完毕"
+        android:textColor="@color/white"
+        />
+  </RelativeLayout>
+
+
+</FrameLayout>

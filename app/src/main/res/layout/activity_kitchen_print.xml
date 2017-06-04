@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.psi.easymanager.widget.InterceptClickFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view"
+    style="@style/MatchWidthAndMatchHeight">
+
+  <com.psi.easymanager.widget.SwipeBackLayout
+      android:id="@+id/content_view"
+      style="@style/MatchWidthAndMatchHeight">
+
+    <LinearLayout
+        style="@style/MatchWidthAndMatchHeight"
+        android:background="@mipmap/bg_main"
+        android:orientation="horizontal">
+      <!--左边打印机列表-->
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_marginRight="@dimen/margin_of_container"
+          android:layout_weight="3"
+          android:padding="@dimen/kitchen_activity_rl_left_padding"
+          android:background="@color/white"
+          android:orientation="vertical">
+
+        <TextView
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/margin_2_5"
+            android:text="打印管理"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_font_title" />
+
+        <View style="@style/DividerLineBlack" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_kitchen_print"
+            style="@style/MatchWidthAndMatchHeight"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+        <TextView
+            android:id="@+id/kitchen_print_hint"
+            style="@style/MatchWidthAndWrapHeight"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/margin_2_5"
+            android:paddingBottom="@dimen/padding_normal"
+            android:paddingTop="@dimen/kitchen_activity_kitchen_print_hint_padding_top"
+            android:text="@string/kitchen_print_hint" />
+      </LinearLayout>
+
+      <!--右边需要打印的商品列表-->
+      <RelativeLayout
+          android:id="@+id/rl_right"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="7"
+          android:padding="@dimen/kitchen_activity_rl_right_padding"
+          android:background="@color/white">
+
+        <RadioGroup
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_marginRight="@dimen/margin_1_5"
+            android:orientation="horizontal">
+
+          <RadioButton
+              android:id="@+id/rb_collect"
+              style="@style/WrapWidthAndWrapHeight"
+              android:layout_gravity="center_vertical"
+              android:checked="true"
+              android:text="订单信息" />
+
+          <RadioButton
+              android:id="@+id/rb_table"
+              style="@style/WrapWidthAndWrapHeight"
+              android:text="桌台信息" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/kitchen_print_bills"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_2_5"
+            android:text="单据列表"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_font_title" />
+
+        <View
+            android:id="@+id/view_temp_bills_top"
+            style="@style/DividerLineBlack"
+            android:layout_below="@id/kitchen_print_bills" />
+
+        <!--底部悬浮图标-->
+        <RelativeLayout
+            android:id="@+id/rl_kitchen_print_bottom"
+            style="@style/MatchWidthAndWrapHeight"
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/padding_normal"
+            android:gravity="center_vertical">
+
+          <ImageButton
+              android:id="@+id/ibtn_document_list_clear"
+              style="@style/StartBillFabStyle"
+              android:background="@drawable/selector_fab_document_list_clear" />
+
+          <ImageButton
+              android:id="@+id/ibtn_document_list_print"
+              style="@style/StartBillFabStyle"
+              android:layout_marginLeft="@dimen/margin_3_5"
+              android:layout_toRightOf="@id/ibtn_document_list_clear"
+              android:background="@drawable/selector_fab_document_list_print" />
+
+          <ImageButton
+              android:id="@+id/ibtn_document_list_test"
+              style="@style/StartBillFabStyle"
+              android:layout_marginLeft="@dimen/margin_3_5"
+              android:layout_toRightOf="@id/ibtn_document_list_print"
+              android:background="@drawable/selector_fab_document_list_test" />
+
+          <TextView
+              android:id="@+id/tv_next_page"
+              style="@style/WrapWidthAndWrapHeight"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="@dimen/margin_2_5"
+              android:padding="@dimen/padding_normal"
+              android:drawablePadding="@dimen/padding_drawable"
+              android:drawableRight="@mipmap/ic_down_page"
+              android:gravity="center"
+              android:text="下页"
+              android:textColor="@color/black" />
+
+          <TextView
+              android:id="@+id/tv_kitchen_print_bills_page"
+              style="@style/WrapWidthAndWrapHeight"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="@dimen/margin_2_5"
+              android:layout_toLeftOf="@id/tv_next_page"
+              android:text="0/0" />
+
+          <TextView
+              android:id="@+id/tv_last_page"
+              style="@style/WrapWidthAndWrapHeight"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="@dimen/margin_2_5"
+              android:layout_toLeftOf="@id/tv_kitchen_print_bills_page"
+              android:padding="@dimen/padding_normal"
+              android:drawableLeft="@mipmap/ic_up_page"
+              android:drawablePadding="@dimen/padding_drawable"
+              android:gravity="center"
+              android:text="上页"
+              android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_temp_bills_bottom"
+            style="@style/DividerLineBlack"
+            android:layout_above="@id/rl_kitchen_print_bottom"
+            android:layout_marginBottom="@dimen/margin_1_5" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_document_list"
+            style="@style/MatchWidthAndMatchHeight"
+            android:layout_above="@id/view_temp_bills_bottom"
+            android:layout_below="@id/view_temp_bills_top"
+            android:scrollbars="vertical" />
+      </RelativeLayout>
+
+    </LinearLayout>
+  </com.psi.easymanager.widget.SwipeBackLayout>
+
+  <include layout="@layout/layout_progress_view" />
+</com.psi.easymanager.widget.InterceptClickFrameLayout>

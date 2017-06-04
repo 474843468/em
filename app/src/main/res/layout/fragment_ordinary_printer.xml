@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchWidthAndMatchHeight"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="center"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:gravity="center"
+      android:text="配置普通打印机"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_title" />
+
+  <View
+      style="@style/DividerLineBlack"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginTop="@dimen/margin_1_5" />
+
+  <TextView
+      style="@style/WrapWidthAndWrapHeight"
+      android:text="小票打印机配置"
+      android:textColor="@color/primary_text"
+      android:textSize="@dimen/text_font_size_normal" />
+
+  <TextView
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:paddingLeft="@dimen/padding_small"
+      android:paddingRight="@dimen/padding_small"
+      android:text="配置打印客户点单、结账、交接班等相关小票票据使用的打印机。建议使用usb接口的打印机，布设简单，使用方便"
+      android:textSize="@dimen/text_font_size_small" />
+
+  <View
+      style="@style/DividerLineGray"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginTop="@dimen/margin_2_5" />
+
+  <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:text="是否使用USB"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <com.kyleduo.switchbutton.SwitchButton
+        android:id="@+id/sb_ordinary_printer"
+        style="@style/SwitchButtonStyle"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:checked="false"
+        app:kswTintColor="@color/colorPrimary" />
+  </RelativeLayout>
+
+  <View
+      style="@style/DividerLineGray"
+      android:layout_marginBottom="@dimen/margin_2_5"
+      android:layout_marginTop="@dimen/margin_2_5" />
+
+  <RelativeLayout style="@style/MatchWidthAndWrapHeight">
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:text="每行字符数"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_normal" />
+
+    <RelativeLayout
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true">
+
+      <TextView
+          android:id="@+id/tv_line_bumber"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_centerVertical="true"
+          android:text="LineNumber"
+          android:textColor="#0288d1" />
+
+      <ImageView
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@id/tv_line_bumber"
+          android:src="@mipmap/ic_right_arrow_48px" />
+    </RelativeLayout>
+  </RelativeLayout>
+
+  <View style="@style/DividerLineGray" />
+
+  <Button
+      android:id="@+id/btn_print_test"
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:background="@drawable/selector_ordinary_print_btn"
+      android:text="测试页" />
+</LinearLayout>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndMatchHeight"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1">
+
+    <LinearLayout
+        style="@style/MatchWidthAndMatchHeight"
+        android:orientation="vertical">
+
+      <TextView
+          android:id="@+id/tv_order_collect_title"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_gravity="center_horizontal"
+          android:text="账单汇总信息"
+          android:textColor="@color/black"
+          android:textSize="@dimen/text_font_title" />
+
+      <View
+          style="@style/DividerLineBlack"
+          android:layout_marginTop="@dimen/margin_2_5" />
+      <!--收银汇总-->
+      <RelativeLayout
+          style="@style/MatchWidthAndWrapHeight"
+          android:padding="@dimen/padding_normal">
+
+        <TextView
+            android:id="@+id/tv_cash_collect"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:drawableTop="@mipmap/ic_cash_shift_collect"
+            android:text="收银汇总"
+            android:textSize="@dimen/text_font_size_big" />
+
+        <LinearLayout
+            android:id="@+id/ll_cash_collect"
+            style="@style/MatchWidthAndWrapHeight"
+            android:layout_toRightOf="@id/tv_cash_collect">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="项目" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="笔数" />
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center"
+              android:text="金额" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_cash_collect"
+            style="@style/MatchWidthAndWrapHeight"
+            android:layout_below="@id/ll_cash_collect"
+            android:layout_marginTop="@dimen/margin_1_5"
+            android:layout_toRightOf="@id/tv_cash_collect"
+            android:divider="@null"></ListView>
+      </RelativeLayout>
+
+      <View
+          style="@style/DividerLineBlack"
+          android:layout_marginTop="@dimen/margin_2_5" />
+      <!--消费统计-->
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/padding_normal">
+
+        <TextView
+            android:id="@+id/tv_consume_statistics"
+            style="@style/WrapWidthAndWrapHeight"
+            android:layout_centerVertical="true"
+            android:drawableTop="@mipmap/ic_shift_consume_collect"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:text="消费统计"
+            android:textSize="@dimen/text_font_size_big" />
+
+        <LinearLayout
+            style="@style/MatchWidthAndWrapHeight"
+            android:layout_toRightOf="@id/tv_consume_statistics"
+            android:orientation="horizontal">
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="单数" />
+
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="人数" />
+
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="总价" />
+
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="应收金额" />
+
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="优惠金额" />
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="支付类优惠" />
+
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="损益金额" />
+
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="实际收入"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="不计入统计金额" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_consume_statics_number"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_consume_statics_people_number"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_consume_statics_total_price"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_consume_statics_receivable"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_consume_statics_privilege"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+            <TextView
+                android:id="@+id/tv_consume_statics_pay_privilege"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_consume_statics_gain_lose"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/tv_consume_statics_received"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_consume_statics_exclusive"
+                style="@style/WrapWidthAndWrapHeight"
+                android:padding="@dimen/padding_normal"
+                android:text="0"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+          </LinearLayout>
+
+          <android.support.v4.widget.Space
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:layout_weight="1" />
+        </LinearLayout>
+      </RelativeLayout>
+
+      <View
+          style="@style/DividerLineBlack"
+          android:layout_marginTop="@dimen/margin_2_5" />
+    </LinearLayout>
+
+  </ScrollView>
+
+  <ImageButton
+      android:id="@+id/ibtn_shift_print"
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_gravity="right"
+      android:layout_marginRight="@dimen/margin_10_5"
+      android:layout_marginTop="@dimen/margin_2_5"
+      android:background="@drawable/selector_btn_shift_print"
+      android:scaleType="centerCrop" />
+</LinearLayout>

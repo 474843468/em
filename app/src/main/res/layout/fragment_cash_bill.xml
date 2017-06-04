@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchWidthAndMatchHeight"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+  <RelativeLayout
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_margin="@dimen/margin_1_5"
+      >
+
+    <TextView
+        android:id="@+id/tv_waiter"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_font_size_small"
+        />
+
+    <TextView
+        android:id="@+id/tv_take_food"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_marginLeft="@dimen/margin_2_5"
+        android:layout_toRightOf="@id/tv_waiter"
+        android:drawableLeft="@mipmap/ic_hint_take_food"
+        android:drawablePadding="@dimen/padding_small"
+        android:padding="@dimen/padding_small"
+        android:text="提示取餐"
+        android:textColor="@color/primary_text"
+        />
+
+    <TextView
+        android:id="@+id/tv_order_info_code"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="NO."
+        android:textColor="#eb4f38"
+        android:textSize="@dimen/text_font_size_normal"
+        />
+
+    <TextView
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_2_5"
+        android:layout_toLeftOf="@id/tv_order_info_code"
+        android:text="客单"
+        android:textSize="@dimen/text_font_size_big"
+        />
+  </RelativeLayout>
+
+  <RelativeLayout
+      style="@style/WrapWidthAndWrapHeight"
+      android:layout_margin="@dimen/margin_1_5"
+      >
+
+    <TextView
+        android:id="@+id/tv_table_name_hint"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:text="桌号"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_table_name"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_table_name_hint"
+        android:textColor="#eb4f38"
+        />
+
+    <ImageView
+        android:id="@+id/iv_has_pay_info"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_marginLeft="@dimen/margin_1_5"
+        android:layout_toRightOf="@id/tv_table_name"
+        android:src="@mipmap/ic_has_pay_info"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerInParent="true"
+        >
+
+      <TextView
+          android:id="@+id/tv_people_number_title"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_marginRight="@dimen/margin_1_5"
+          android:text="人数"
+          android:textColor="@color/black"
+          />
+
+      <TextView
+          android:id="@+id/tv_people_number"
+          style="@style/WrapWidthAndWrapHeight"
+          android:layout_marginLeft="@dimen/margin_1_5"
+          android:layout_toRightOf="@id/tv_people_number_title"
+          android:textColor="#eb4f38"
+          />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_order_info_start_time"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="开单时间"
+        android:textColor="#eb4f38"
+        />
+
+  </RelativeLayout>
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:background="@color/divider"
+      />
+  <LinearLayout
+      style="@style/MatchWidthAndMatchHeight"
+      android:gravity="center_horizontal"
+      android:orientation="vertical"
+      >
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scrollbars="none"
+        />
+    <!--下方按钮-->
+    <include layout="@layout/layout_cash_bill_fabs"/>
+
+  </LinearLayout>
+
+</LinearLayout>

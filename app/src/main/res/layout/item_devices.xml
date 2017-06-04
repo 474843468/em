@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_kitchen_print_view"
+    style="@style/MatchWidthAndWrapHeight"
+    android:orientation="vertical">
+
+
+  <TextView
+      android:id="@+id/tv_kitchen_print_device_name"
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginLeft="@dimen/margin_1_5"
+      android:layout_marginRight="@dimen/margin_1_5"
+      android:padding="@dimen/margin_1_5"
+      android:text="设备名称:"
+      android:textColor="@color/black"
+      android:textSize="@dimen/text_font_size_normal" />
+
+
+  <RelativeLayout
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginLeft="@dimen/margin_2_5"
+      android:padding="@dimen/padding_small"
+      android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/tv_kitchen_print_ip_temp"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:text="IP地址："
+        android:textSize="@dimen/text_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_kitchen_print_ip"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_kitchen_print_ip_temp"
+        android:text="127.0.0.1"
+        android:textColor="@color/main_tab_text_color_selected"
+        android:textSize="@dimen/text_font_size_small" />
+
+    <ImageView
+        android:id="@+id/iv_kitchen_print_temp"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_right_arrow_48px" />
+
+    <TextView
+        android:id="@+id/tv_kitchen_print_do_once"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/margin_2_5"
+        android:layout_toLeftOf="@id/iv_kitchen_print_temp"
+        android:text="一菜一切:否"
+        android:textSize="@dimen/text_font_size_small" />
+  </RelativeLayout>
+
+  <RelativeLayout
+      style="@style/MatchWidthAndWrapHeight"
+      android:layout_marginLeft="@dimen/margin_1_5"
+      android:layout_marginRight="@dimen/margin_1_5"
+      android:padding="@dimen/padding_small">
+
+    <TextView
+        android:id="@+id/tv_kitchen_print_config"
+        style="@style/WrapWidthAndWrapHeight"
+        android:text="打印份数:1"
+        android:textSize="@dimen/text_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_kitchen_print_copies"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_centerHorizontal="true"
+        android:text="每行字符数:32"
+        android:textSize="@dimen/text_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_kitchen_connected"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:drawableLeft="@mipmap/ic_kitchen_print_connected"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:text="已连接"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_font_size_small" />
+
+    <TextView
+        android:id="@+id/tv_kitchen_not_connect"
+        style="@style/WrapWidthAndWrapHeight"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_1_5"
+        android:drawableLeft="@mipmap/ic_kitchen_print_unconnected"
+        android:drawablePadding="@dimen/padding_drawable"
+        android:text="未连接"
+        android:textColor="@color/red"
+        android:textSize="@dimen/text_font_size_small"
+        android:visibility="gone" />
+  </RelativeLayout>
+
+  <View
+      style="@style/DividerLineBlack"
+      android:padding="@dimen/padding_small" />
+</LinearLayout>
